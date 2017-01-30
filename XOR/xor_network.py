@@ -55,14 +55,15 @@ if __name__ == '__main__':
 		# Generates a snapshot of the loss function every time a summary is written out
 		tf.scalar_summary('loss', loss)
 
-		learning_rate = 0.005
+		learning_rate = 0.01
 
-		optimizer = tf.train.AdamOptimizer(learning_rate)
+		# optimizer = tf.train.AdamOptimizer(learning_rate)
+		optimizer = tf.train.GradientDescentOptimizer(learning_rate)
 
 		global_step = tf.Variable(0, name='global_step', trainable=False)
 		optim = optimizer.minimize(loss, global_step=global_step)
 
-		summary = tf.merge_all_summaries()
+		summary = tf.summary.merge_all()
 
 		with tf.Session() as sess:
 			summary_writer = tf.summary.FileWriter("train_dir", sess.graph)
@@ -70,10 +71,6 @@ if __name__ == '__main__':
 			init = tf.global_variables_initializer()
 			sess.run(init)	
 
-			data = get_batch()
-			f_dict = {x: data[0], y: data[1]}
-			print(sess.run(loss, feed_dict=f_dict))
-			
 			for step in xrange(1, 3000):
 				data_x, data_y = get_batch()
 				feed_dict = {x: data_x, y: data_y}
@@ -87,6 +84,7 @@ if __name__ == '__main__':
 					summary_writer.add_summary(summary_str, step)
 
 				if step % 100 == 0:
+					print data_x
 					print 'Step %d: loss = %.2f (%.3f sec)' % (step, loss_value, duration)	
 
 			# check the results on some examples
