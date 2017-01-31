@@ -5,7 +5,6 @@ import time
 
 def get_batch(batch_size):
 	options = [([0,1], [1, 0]), ([0,0], [1, 0]), ([1, 1], [0, 1]), ([1,0], [1, 0])]
-	# options = [([0,1], [1, 0]), ([0,0], [1, 0]), ([1, 1], [0, 1])]#, ([1,0], [1, 0])]
 
 	x = np.zeros([batch_size, 2], dtype='float')
 	y = np.zeros([batch_size, 2], dtype='float')
@@ -25,10 +24,10 @@ def get_batch(batch_size):
 def variable_summaries(variables):
 	"""Attach a lot of summaries to a Tensor (for TensorBoard visualization)."""
 	for var in variables:
-		with tf.name_scope('summaries'):
-			mean = tf.reduce_mean(var)
-			stddev = tf.sqrt(tf.reduce_mean(tf.square(var - mean)))
-			
+		mean = tf.reduce_mean(var)
+		stddev = tf.sqrt(tf.reduce_mean(tf.square(var - mean)))
+		
+		with tf.name_scope(var.name):		
 			tf.summary.scalar('mean', mean)
 			tf.summary.scalar('stddev', stddev)
 			tf.summary.scalar('max', tf.reduce_max(var))
@@ -37,6 +36,7 @@ def variable_summaries(variables):
 	 
 if __name__ == '__main__':
 	batch_size = 100
+	num_hidden = 7
 
 	with tf.Graph().as_default():
 		# Define variables.
@@ -44,15 +44,15 @@ if __name__ == '__main__':
 		y = tf.placeholder(tf.float32, [batch_size, 2], name='y') 
 
 		with tf.name_scope('hidden0'):
-			weights0 = tf.Variable(tf.truncated_normal([2, 10], mean=0, stddev=0.01), name='weights');
-			biases0 = tf.Variable(tf.zeros([10]), name='biases')
+			weights0 = tf.Variable(tf.truncated_normal([2, num_hidden], mean=0, stddev=1/np.sqrt(2)), name='weights');
+			biases0 = tf.Variable(tf.zeros([num_hidden]), name='biases')
 	
 		with tf.name_scope('hidden1'):
-			weights1 = tf.Variable(tf.truncated_normal([10, 10], mean=0, stddev=0.01), name='weights');
-			biases1 = tf.Variable(tf.zeros([10]), name='biases')
+			weights1 = tf.Variable(tf.truncated_normal([num_hidden, num_hidden], mean=0, stddev=1/np.sqrt(num_hidden)), name='weights');
+			biases1 = tf.Variable(tf.zeros([num_hidden]), name='biases')
 		
 		with tf.name_scope("output"):
-			weights2 = tf.Variable(tf.truncated_normal([10, 2], mean=0, stddev=0.01), name='weights');
+			weights2 = tf.Variable(tf.truncated_normal([num_hidden, 2], mean=0, stddev=1/np.sqrt(num_hidden)), name='weights');
 			biases2 = tf.Variable(tf.zeros([2]), name='biases')
 
 		variable_summaries([weights0, biases0, weights1, biases1, weights2, biases2])
@@ -67,7 +67,7 @@ if __name__ == '__main__':
 
 		tf.scalar_summary('loss', loss)
 
-		learning_rate = 0.1
+		learning_rate = 0.2
 
 		# optimizer = tf.train.AdamOptimizer(learning_rate)
 		optimizer = tf.train.GradientDescentOptimizer(learning_rate)
@@ -83,7 +83,7 @@ if __name__ == '__main__':
 			init = tf.global_variables_initializer()
 			sess.run(init)	
 
-			for step in xrange(1, 5000):
+			for step in xrange(1, 1000):
 				data_x, data_y = get_batch(batch_size)
 				feed_dict = {x: data_x, y: data_y}
 
