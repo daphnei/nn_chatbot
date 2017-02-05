@@ -3,39 +3,29 @@ import tensorflow as tf
 import random
 import time
 
+QUIET = False
+WRITE_TO_TENSORBOARD = False
+
 def get_batch(batch_size):
 	options = [([0,1], [1, 0]), ([0,0], [1, 0]), ([1, 1], [0, 1]), ([1,0], [1, 0])]
 
 	x = np.zeros([batch_size, 2], dtype='float')
 	y = np.zeros([batch_size, 2], dtype='float')
 
-	for i in xrange(0, batch_size):
-		chosen = random.choice(options)
-		x[i,:] = np.array(chosen[0], dtype='float').reshape([1,2])
-		y[i,:] = np.array(chosen[1], dtype='float').reshape([1,2])
-	return (x, y) 
-
+	# This code fills in batches randomly, which doesn't work consistently.
 	# for i in xrange(0, batch_size):
-		# chosen = options[i]
+		# chosen = random.choice(options)
 		# x[i,:] = np.array(chosen[0], dtype='float').reshape([1,2])
 		# y[i,:] = np.array(chosen[1], dtype='float').reshape([1,2])
 	# return (x, y) 
 
-# def variable_summaries(scope, variables):
-	# """Attach a lot of summaries to a Tensor (for TensorBoard visualization)."""
-	# with tf.variable_scope(scope, reuse = True):		
-		# for var_name in variables:
-			# var = tf.get_variable(var_name)
-# 
-			# mean = tf.reduce_mean(var)
-			# stddev = tf.sqrt(tf.reduce_mean(tf.square(var - mean)))
-		# 
-			# tf.summary.scalar('mean', mean)
-			# tf.summary.scalar('stddev', stddev)
-			# tf.summary.scalar('max', tf.reduce_max(var))
-			# tf.summary.scalar('min', tf.reduce_min(var))
-			# tf.summary.histogram('histogram', var)
-
+	# This code makes sure each batch has about the same number of each example.
+	for i in xrange(0, batch_size):
+		chosen = options[i%4]
+		x[i,:] = np.array(chosen[0], dtype='float').reshape([1,2])
+		y[i,:] = np.array(chosen[1], dtype='float').reshape([1,2])
+	return (x, y) 
+ 
 def variable_summaries(var):
 	"""Attach a lot of summaries to a Tensor (for TensorBoard visualization)."""
 	with tf.name_scope('summary'):
@@ -58,28 +48,43 @@ def add_fully_connected(x, input_dim, output_dim):
 			variable_summaries(biases)
 	return tf.nn.relu(tf.matmul(x, weights) + biases)	
 
-if __name__ == '__main__':
-	batch_size = 100
-	num_hidden = 7
-
+def run_network(batch_size, num_steps, num_hidden, num_hidden_layers, learning_rate, adam = True, activation='relu'):	
 	with tf.Graph().as_default():
 		# with tf.device('/gpu:2'):
 		# Define variables.
 		x = tf.placeholder(tf.float32, [batch_size, 2], name='x')
 		y = tf.placeholder(tf.float32, [batch_size, 2], name='y') 
 
-		hidden0 = tf.nn.relu(add_fully_connected(x, 2, num_hidden))
-		hidden1 = tf.nn.relu(add_fully_connected(hidden0, num_hidden, num_hidden))
-		output = add_fully_connected(hidden1, num_hidden, 2)
+		last_layer = x	
+		last_layer_dim = 2
+
+		activ_func = tf.nn.relu
+		if activation == 'sigmoid':
+			activ_func = tf.nn.sigmoid
+		elif activation == 'tanh':
+			activ_func = tf.nn.tanh
+
+		import pdb
+		pdb.set_trace()
+	
+		# Add specified number of hidden layers.
+		for i in xrange(0, num_hidden_layers):
+			print 'Adding hidden layer with %d nodes' % (num_hidden)
+			hidden = activ_func(add_fully_connected(last_layer, last_layer_dim, num_hidden))
+			last_layer = hidden
+			last_layer_dim = num_hidden
+
+		output = add_fully_connected(last_layer, last_layer_dim, 2)
 
 		loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = output, labels = y), name='loss')
 
 		tf.summary.scalar('loss', loss)
 
-		learning_rate = 0.2
 
-		# optimizer = tf.train.AdamOptimizer(learning_rate)
-		optimizer = tf.train.GradientDescentOptimizer(learning_rate)
+		if adam:
+			optimizer = tf.train.AdamOptimizer(learning_rate)
+		else:
+			optimizer = tf.train.GradientDescentOptimizer(learning_rate)
 
 		global_step = tf.Variable(0, name='global_step', trainable=False)
 		optim = optimizer.minimize(loss, global_step=global_step)
@@ -92,7 +97,7 @@ if __name__ == '__main__':
 			init = tf.global_variables_initializer()
 			sess.run(init)	
 
-			for step in xrange(1, 1000):
+			for step in xrange(1, num_steps):
 				data_x, data_y = get_batch(batch_size)
 				feed_dict = {x: data_x, y: data_y}
 
@@ -101,21 +106,39 @@ if __name__ == '__main__':
                              feed_dict=feed_dict)
 				duration = time.time() - start_time
 				
-				if step % 10 == 0:	
+				if step % 10 == 0 and WRITE_TO_TENSORBOARD:	
 					summary_writer.add_summary(summary_str, step)
 
-				if step % 100 == 0:
+				if step % 50 == 0:
 					# print data_x
 					num_correct_op = tf.equal(tf.argmax(data_y, 1), tf.argmax(output, 1))
 					accuracy = np.sum(sess.run(num_correct_op, feed_dict=feed_dict)) / float(batch_size)
-					print 'Step %d: loss = %.2f, batch acc = %.2f (%.3f sec)' % (step, loss_value, accuracy, duration)	
 
-			# check the results on some examples
-			# for i in xrange(0,10):
-				# data = get_batch()
-				# f_dict = {x: data[0], y: data[1]}	
-				# print f_dict
-				# out = sess.run(output, f_dict)
-				# print out[0, 0] > out[0, 1]
-				# print out
-				# print "\n"
+					# check the results on 100*batch_size 'test' examples
+					num_correct = 0
+					for i in xrange(0, 10):
+						data = get_batch(batch_size)
+						f_dict = {x: data[0], y: data[1]}	
+						out = sess.run(output, f_dict)
+					
+						num_correct_op = tf.equal(tf.argmax(data_y, 1), tf.argmax(output, 1))
+						num_correct = num_correct + np.sum(sess.run(num_correct_op, feed_dict=feed_dict))
+					test_accuracy = num_correct / float(10 * batch_size)
+
+					if not QUIET:
+						print 'Step %d: loss = %.2f, batch acc = %.2f, test acc = %.2f (%.3f sec)' % (step, loss_value, accuracy, test_accuracy, duration)	
+
+					if accuracy == 1.0:
+						# Good enough exit
+						print 'Test accuracy is perfect after %d iterations. Quitting.' % (step)
+						exit()
+			print 'After %d iterations, the network has still not converged. Something must be very wrong.' % (num_steps)
+
+if __name__ == "__main__":
+	batch_size = 100
+	num_steps = 10000
+	num_hidden = 7
+	num_hidden_layers = 2
+	learning_rate = 0.2
+
+	run_network(batch_size, num_steps, num_hidden, num_hidden_layers, learning_rate, False, 'relu')
