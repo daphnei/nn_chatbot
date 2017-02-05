@@ -12,19 +12,20 @@ def get_batch(batch_size):
 	x = np.zeros([batch_size, 2], dtype='float')
 	y = np.zeros([batch_size, 2], dtype='float')
 
-	# This code fills in batches randomly, which doesn't work consistently.
-	# for i in xrange(0, batch_size):
-		# chosen = random.choice(options)
-		# x[i,:] = np.array(chosen[0], dtype='float').reshape([1,2])
-		# y[i,:] = np.array(chosen[1], dtype='float').reshape([1,2])
-	# return (x, y) 
-
-	# This code makes sure each batch has about the same number of each example.
+	# This code fills in batches randomly, which doesn't work consistently for small
+	# batches, but seems more 'real world' to me.
 	for i in xrange(0, batch_size):
-		chosen = options[i%4]
+		chosen = random.choice(options)
 		x[i,:] = np.array(chosen[0], dtype='float').reshape([1,2])
 		y[i,:] = np.array(chosen[1], dtype='float').reshape([1,2])
 	return (x, y) 
+
+	# This code makes sure each batch has about the same number of each example.
+	# for i in xrange(0, batch_size):
+		# chosen = options[i%4]
+		# x[i,:] = np.array(chosen[0], dtype='float').reshape([1,2])
+		# y[i,:] = np.array(chosen[1], dtype='float').reshape([1,2])
+	# return (x, y) 
  
 def variable_summaries(var):
 	"""Attach a lot of summaries to a Tensor (for TensorBoard visualization)."""
@@ -41,12 +42,12 @@ def variable_summaries(var):
 def add_fully_connected(x, input_dim, output_dim):
 	with tf.name_scope('fc'):
 		with tf.name_scope('weights'):
-			weights = tf.Variable(tf.truncated_normal([input_dim, output_dim], mean=0, stddev=1/np.sqrt(2)), name='weights');
+			weights = tf.Variable(tf.truncated_normal([input_dim, output_dim], mean=0, stddev=1/np.sqrt(input_dim)), name='weights');
 			variable_summaries(weights)
 		with tf.name_scope('biases'):
 			biases = tf.Variable(tf.zeros([output_dim]), name='biases')
 			variable_summaries(biases)
-	return tf.nn.relu(tf.matmul(x, weights) + biases)	
+	return tf.matmul(x, weights) + biases
 
 def run_network(batch_size, num_steps, num_hidden, num_hidden_layers, learning_rate, adam = True, activation='relu'):	
 	with tf.Graph().as_default():
@@ -63,9 +64,6 @@ def run_network(batch_size, num_steps, num_hidden, num_hidden_layers, learning_r
 			activ_func = tf.nn.sigmoid
 		elif activation == 'tanh':
 			activ_func = tf.nn.tanh
-
-		import pdb
-		pdb.set_trace()
 	
 		# Add specified number of hidden layers.
 		for i in xrange(0, num_hidden_layers):
@@ -131,12 +129,12 @@ def run_network(batch_size, num_steps, num_hidden, num_hidden_layers, learning_r
 					if accuracy == 1.0:
 						# Good enough exit
 						print 'Test accuracy is perfect after %d iterations. Quitting.' % (step)
-						exit()
+						return
 			print 'After %d iterations, the network has still not converged. Something must be very wrong.' % (num_steps)
 
 if __name__ == "__main__":
 	batch_size = 100
-	num_steps = 10000
+	num_steps = 100
 	num_hidden = 7
 	num_hidden_layers = 2
 	learning_rate = 0.2
