@@ -21,51 +21,60 @@ def get_batch(batch_size):
 		# y[i,:] = np.array(chosen[1], dtype='float').reshape([1,2])
 	# return (x, y) 
 
-def variable_summaries(variables):
+# def variable_summaries(scope, variables):
+	# """Attach a lot of summaries to a Tensor (for TensorBoard visualization)."""
+	# with tf.variable_scope(scope, reuse = True):		
+		# for var_name in variables:
+			# var = tf.get_variable(var_name)
+# 
+			# mean = tf.reduce_mean(var)
+			# stddev = tf.sqrt(tf.reduce_mean(tf.square(var - mean)))
+		# 
+			# tf.summary.scalar('mean', mean)
+			# tf.summary.scalar('stddev', stddev)
+			# tf.summary.scalar('max', tf.reduce_max(var))
+			# tf.summary.scalar('min', tf.reduce_min(var))
+			# tf.summary.histogram('histogram', var)
+
+def variable_summaries(var):
 	"""Attach a lot of summaries to a Tensor (for TensorBoard visualization)."""
-	for var in variables:
+	with tf.name_scope('summary'):
 		mean = tf.reduce_mean(var)
-		stddev = tf.sqrt(tf.reduce_mean(tf.square(var - mean)))
-		
-		with tf.name_scope(var.name):		
-			tf.summary.scalar('mean', mean)
-			tf.summary.scalar('stddev', stddev)
-			tf.summary.scalar('max', tf.reduce_max(var))
-			tf.summary.scalar('min', tf.reduce_min(var))
-			tf.summary.histogram('histogram', var)
-	 
+		tf.summary.scalar('mean', mean)
+		with tf.name_scope('stddev'):
+			stddev = tf.sqrt(tf.reduce_mean(tf.square(var - mean)))
+		tf.summary.scalar('stddev', stddev)
+		tf.summary.scalar('max', tf.reduce_max(var))
+		tf.summary.scalar('min', tf.reduce_min(var))
+		tf.summary.histogram('histogram', var)
+
+def add_fully_connected(x, input_dim, output_dim):
+	with tf.name_scope('fc'):
+		with tf.name_scope('weights'):
+			weights = tf.Variable(tf.truncated_normal([input_dim, output_dim], mean=0, stddev=1/np.sqrt(2)), name='weights');
+			variable_summaries(weights)
+		with tf.name_scope('biases'):
+			biases = tf.Variable(tf.zeros([output_dim]), name='biases')
+			variable_summaries(biases)
+	return tf.nn.relu(tf.matmul(x, weights) + biases)	
+
 if __name__ == '__main__':
 	batch_size = 100
 	num_hidden = 7
 
 	with tf.Graph().as_default():
+		# with tf.device('/gpu:2'):
 		# Define variables.
 		x = tf.placeholder(tf.float32, [batch_size, 2], name='x')
 		y = tf.placeholder(tf.float32, [batch_size, 2], name='y') 
 
-		with tf.name_scope('hidden0'):
-			weights0 = tf.Variable(tf.truncated_normal([2, num_hidden], mean=0, stddev=1/np.sqrt(2)), name='weights');
-			biases0 = tf.Variable(tf.zeros([num_hidden]), name='biases')
-	
-		with tf.name_scope('hidden1'):
-			weights1 = tf.Variable(tf.truncated_normal([num_hidden, num_hidden], mean=0, stddev=1/np.sqrt(num_hidden)), name='weights');
-			biases1 = tf.Variable(tf.zeros([num_hidden]), name='biases')
-		
-		with tf.name_scope("output"):
-			weights2 = tf.Variable(tf.truncated_normal([num_hidden, 2], mean=0, stddev=1/np.sqrt(num_hidden)), name='weights');
-			biases2 = tf.Variable(tf.zeros([2]), name='biases')
+		hidden0 = tf.nn.relu(add_fully_connected(x, 2, num_hidden))
+		hidden1 = tf.nn.relu(add_fully_connected(hidden0, num_hidden, num_hidden))
+		output = add_fully_connected(hidden1, num_hidden, 2)
 
-		variable_summaries([weights0, biases0, weights1, biases1, weights2, biases2])
+		loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = output, labels = y), name='loss')
 
-		#hidden1 = tf.nn.relu(tf.matmul(x, tf.get_variable('hidden1/weights')) + tf.get_variable('hidden1/biases'))
-		#hidden2 = tf.nn.relu(tf.matmul(hidden1, tf.get_variable('hidden2/weights')) + tf.get_variable('hidden2/biases'))
-		hidden0 = tf.nn.relu(tf.matmul(x, weights0) + biases0)
-		hidden1 = tf.nn.relu(tf.matmul(hidden0, weights1) + biases1)
-		output = (tf.matmul(hidden1, weights2) + biases2)
-
-		loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(output, y), name='loss')
-
-		tf.scalar_summary('loss', loss)
+		tf.summary.scalar('loss', loss)
 
 		learning_rate = 0.2
 
