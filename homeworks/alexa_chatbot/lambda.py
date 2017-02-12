@@ -30,7 +30,7 @@ def lambda_handler(request_obj, context=None):
 def default_handler(request):
 
     """ The default handler gets invoked if no handler is set for a request """
-    return alexa.create_response(message=request.get_slot_map()["Text"])
+    return alexa.create_response(message="I give up")
 
 
 @alexa.request_handler("LaunchRequest")
@@ -41,6 +41,14 @@ def launch_request_handler(request):
 @alexa.request_handler("SessionEndedRequest")
 def session_ended_request_handler(request):
     return alexa.create_response(message="Goodbye!")
+
+@alexa.intent_handler("Greeting")
+def greeting_intent_handler(request):
+    return alexa.create_response(message=request.get_slot_value("test"))
+
+@alexa.intent_handler("Thanks")
+def thanks_request_handler(request):
+    return alexa.create_response(message="No problem")
 
 @alexa.intent_handler('GetRecipeIntent')
 def get_recipe_intent_handler(request):
