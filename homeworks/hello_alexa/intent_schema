@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "intent": "AMAZON.HelpIntent",
+      "slots": []
+    },
+    {
+      "intent": "AMAZON.StopIntent",
+      "slots": []
+    },
+    {
+      "intent": "AMAZON.CancelIntent",
+      "slots": []
+    },
+    {
+      "intent": "Greeting",
+      "slots": [
+        {
+          "name": "test",
+          "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "Thanks",
+      "slots": [
+        {
+          "name": "test",
+          "type": "AMAZON.LITERAL"
+        }
+      ]
+    }
+  ]
+}

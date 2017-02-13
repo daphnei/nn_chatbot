@@ -1,0 +1,13 @@
+AMAZON.HelpIntent	help
+AMAZON.StopIntent	stop
+AMAZON.StopIntent	quit
+AMAZON.StopIntent	exit
+AMAZON.CancelIntent	never mind
+AMAZON.CancelIntent	cancel
+Greeting	hey
+Greeting	hello
+Greeting	good morning
+Greeting	good afternoon
+Greeting	yo
+Thanks	Thank you
+Thanks	Thanks

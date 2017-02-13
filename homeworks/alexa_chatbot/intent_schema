@@ -1,0 +1,13 @@
+{
+   "intents": [
+    {
+       "intent": "SuperIntent",
+       "slots": [
+          {
+             "name": "Text",
+             "type": "AMAZON.LITERAL"
+          }
+       ]
+    }
+   ]
+}
