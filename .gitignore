@@ -1,3 +1,6 @@
+#ignore config objects
+homeworks/alexa_chatbot/*.json
+
 # ignore all zip/temp/osx files
 *.zip
 *~
