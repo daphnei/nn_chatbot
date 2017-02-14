@@ -5,6 +5,9 @@ Happy Hacking!
 """
 
 from ask import alexa
+import socket
+import sys
+import alexa_client
 
 def lambda_handler(request_obj, context=None):
     '''
@@ -28,9 +31,11 @@ def lambda_handler(request_obj, context=None):
 
 @alexa.default_handler()
 def default_handler(request):
-
+    user_utterance = request.get_slot_map()["Text"]
+    alexa_reply = client.talk_to_server(user_utterance)
+            
     """ The default handler gets invoked if no handler is set for a request """
-    return alexa.create_response(message="I give up")
+    return alexa.create_response(message=alexa_reply)
 
 
 @alexa.request_handler("LaunchRequest")
@@ -41,39 +46,3 @@ def launch_request_handler(request):
 @alexa.request_handler("SessionEndedRequest")
 def session_ended_request_handler(request):
     return alexa.create_response(message="Goodbye!")
-
-@alexa.intent_handler("Greeting")
-def greeting_intent_handler(request):
-    return alexa.create_response(message=request.get_slot_value("test"))
-
-@alexa.intent_handler("Thanks")
-def thanks_request_handler(request):
-    return alexa.create_response(message="No problem")
-
-@alexa.intent_handler('GetRecipeIntent')
-def get_recipe_intent_handler(request):
-    """
-    You can insert arbitrary business logic code here    
-    """
-
-    # Get variables like userId, slots, intent name etc from the 'Request' object
-    ingredient = request.slots["Ingredient"] 
-
-    if ingredient == None:
-        return alexa.create_response("Could not find an ingredient!")
-
-    card = alexa.create_card(title="GetRecipeIntent activated", subtitle=None,
-                             content="asked alexa to find a recipe using {}".format(ingredient))
-    
-    return alexa.create_response("Finding a recipe with the ingredient {}".format(ingredient),
-                                 end_session=False, card_obj=card)
-
-
-
-@alexa.intent_handler('NextRecipeIntent')
-def next_recipe_intent_handler(request):
-    """
-    You can insert arbitrary business logic code here
-    """
-    return alexa.create_response(message="Getting Next Recipe ... 123")
-
