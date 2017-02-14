@@ -6,7 +6,7 @@ def talk_to_server(user_utterance):
 	reply = ""
 
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	server_address = ('lvn403-6.grasp.upenn.edu', 62219)
+	server_address = ('foo', 0)
 	sock.connect(server_address)
 
 	try:

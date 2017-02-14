@@ -4,7 +4,7 @@ import sys
 if __name__ == "__main__":
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-	server_address = ('lvn403-6.grasp.upenn.edu', 62219)
+	server_address = ('foo', 62219)
 	print('starting up on %s port %s' % server_address)
 	sock.bind(server_address)
 
