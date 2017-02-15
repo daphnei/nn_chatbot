@@ -27,5 +27,7 @@ def talk_to_server(user_utterance):
 	except:
 		print("problem communicating with server")
 
+	sock.close()
+
 	return reply
 			
