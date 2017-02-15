@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # Where the raw data is saved.
-raw_data_dir='twitter_data_dir'
+raw_data_dir='twitter_raw_data'
 # where the processed data is saved
-data_dir='twitter_processed_data_dir'
+data_dir='twitter_processed_nltk'
 # Where the model (and checkpoints) are saved
-train_dir='checkpoints'
+train_dir='twitter_checkpoints_2'
 
 # What fraction of q-a pairs should be witheld for test time
 num_test=7265

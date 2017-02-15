@@ -242,52 +242,65 @@ def train():
         sys.stdout.flush()
 
 
-def decode():
-  with tf.Session() as sess:
-    # Create model and load parameters.
-    model = create_model(sess, True)
-    model.batch_size = 1  # We decode one sentence at a time.
+def decode_sentence(sess, model, in_vocab, out_vocab, sentence):
+  # Get token-ids for the input sentence.
+  token_ids = data_utils.sentence_to_token_ids(tf.compat.as_bytes(sentence), in_vocab)
+  # Which bucket does it belong to?
+  bucket_id = len(_buckets) - 1
+  for i, bucket in enumerate(_buckets):
+    if bucket[0] >= len(token_ids):
+      bucket_id = i
+      break
+  else:
+    logging.warning("Sentence truncated: %s", sentence)
 
-    # Load vocabularies.
-    en_vocab_path = os.path.join(FLAGS.data_dir,
-                                 "vocab%d.from" % FLAGS.from_vocab_size)
-    fr_vocab_path = os.path.join(FLAGS.data_dir,
-                                 "vocab%d.to" % FLAGS.to_vocab_size)
-    en_vocab, _ = data_utils.initialize_vocabulary(en_vocab_path)
-    _, rev_fr_vocab = data_utils.initialize_vocabulary(fr_vocab_path)
+  # Get a 1-element batch to feed the sentence to the model.
+  encoder_inputs, decoder_inputs, target_weights = model.get_batch(
+      {bucket_id: [(token_ids, [])]}, bucket_id)
+  # Get output logits for the sentence.
+  _, _, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
+                                   target_weights, bucket_id, True)
+  # This is a greedy decoder - outputs are just argmaxes of output_logits.
+  outputs = [int(np.argmax(logit, axis=1)) for logit in output_logits]
+  # If there is an EOS symbol in outputs, cut them at that point.
+  if data_utils.EOS_ID in outputs:
+    outputs = outputs[:outputs.index(data_utils.EOS_ID)]
+  # Print out French sentence corresponding to outputs.
+
+  return " ".join([tf.compat.as_str(out_vocab[output]) for output in outputs])  
+
+
+def decode_from_stdin():
+  with tf.Session() as sess:
+    (model, in_vocab, out_vocab) = init_decode(sess)
 
     # Decode from standard input.
     sys.stdout.write("> ")
     sys.stdout.flush()
     sentence = sys.stdin.readline()
     while sentence:
-      # Get token-ids for the input sentence.
-      token_ids = data_utils.sentence_to_token_ids(tf.compat.as_bytes(sentence), en_vocab)
-      # Which bucket does it belong to?
-      bucket_id = len(_buckets) - 1
-      for i, bucket in enumerate(_buckets):
-        if bucket[0] >= len(token_ids):
-          bucket_id = i
-          break
-      else:
-        logging.warning("Sentence truncated: %s", sentence)
-
-      # Get a 1-element batch to feed the sentence to the model.
-      encoder_inputs, decoder_inputs, target_weights = model.get_batch(
-          {bucket_id: [(token_ids, [])]}, bucket_id)
-      # Get output logits for the sentence.
-      _, _, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
-                                       target_weights, bucket_id, True)
-      # This is a greedy decoder - outputs are just argmaxes of output_logits.
-      outputs = [int(np.argmax(logit, axis=1)) for logit in output_logits]
-      # If there is an EOS symbol in outputs, cut them at that point.
-      if data_utils.EOS_ID in outputs:
-        outputs = outputs[:outputs.index(data_utils.EOS_ID)]
-      # Print out French sentence corresponding to outputs.
-      print(" ".join([tf.compat.as_str(rev_fr_vocab[output]) for output in outputs]))
+      output = decode_sentence(sess, model, in_vocab, out_vocab, sentence)
+      
+      print(output)
       print("> ", end="")
       sys.stdout.flush()
+
       sentence = sys.stdin.readline()
+
+def init_decode(sess):
+    # Create model and load parameters.
+    model = create_model(sess, True)
+    model.batch_size = 1  # We decode one sentence at a time.
+
+    # Load vocabularies.
+    in_vocab_path = os.path.join(FLAGS.data_dir,
+                                 "vocab%d.from" % FLAGS.from_vocab_size)
+    out_vocab_path= os.path.join(FLAGS.data_dir,
+                                 "vocab%d.to" % FLAGS.to_vocab_size)
+    in_vocab, _ = data_utils.initialize_vocabulary(in_vocab_path)
+    _, rev_out_vocab = data_utils.initialize_vocabulary(out_vocab_path)
+
+    return (model, in_vocab, rev_out_vocab)
 
 
 def self_test():
@@ -314,7 +327,7 @@ def main(_):
   if FLAGS.self_test:
     self_test()
   elif FLAGS.decode:
-    decode()
+    decode_from_stdin()
   else:
     train()
 

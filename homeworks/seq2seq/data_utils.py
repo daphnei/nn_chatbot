@@ -22,7 +22,7 @@ import gzip
 import os
 import re
 import tarfile
-
+import nltk
 from six.moves import urllib
 
 from tensorflow.python.platform import gfile
@@ -33,6 +33,9 @@ _PAD = b"_PAD"
 _GO = b"_GO"
 _EOS = b"_EOS"
 _UNK = b"_UNK"
+_HASHTAG = b"_HASHTAG"
+_NUMBER = b"_NUMBER"
+
 _START_VOCAB = [_PAD, _GO, _EOS, _UNK]
 
 PAD_ID = 0
@@ -43,6 +46,7 @@ UNK_ID = 3
 # Regular expressions used to tokenize.
 _WORD_SPLIT = re.compile(b"([.,!?\"':;)(])")
 _DIGIT_RE = re.compile(br"\d")
+_HASH_RE = re.compile(b"^\#")
 
 # URLs for WMT data.
 _WMT_ENFR_TRAIN_URL = "http://www.statmt.org/wmt10/training-giga-fren.tar"
@@ -71,38 +75,6 @@ def gunzip_file(gz_path, new_path):
       for line in gz_file:
         new_file.write(line)
 
-
-def get_wmt_enfr_train_set(directory):
-  """Download the WMT en-fr training corpus to directory unless it's there."""
-  train_path = os.path.join(directory, "giga-fren.release2.fixed")
-  if not (gfile.Exists(train_path +".fr") and gfile.Exists(train_path +".en")):
-    corpus_file = maybe_download(directory, "training-giga-fren.tar",
-                                 _WMT_ENFR_TRAIN_URL)
-    print("Extracting tar file %s" % corpus_file)
-    with tarfile.open(corpus_file, "r") as corpus_tar:
-      corpus_tar.extractall(directory)
-    gunzip_file(train_path + ".fr.gz", train_path + ".fr")
-    gunzip_file(train_path + ".en.gz", train_path + ".en")
-  return train_path
-
-
-def get_wmt_enfr_dev_set(directory):
-  """Download the WMT en-fr training corpus to directory unless it's there."""
-  dev_name = "newstest2013"
-  dev_path = os.path.join(directory, dev_name)
-  if not (gfile.Exists(dev_path + ".fr") and gfile.Exists(dev_path + ".en")):
-    dev_file = maybe_download(directory, "dev-v2.tgz", _WMT_ENFR_DEV_URL)
-    print("Extracting tgz file %s" % dev_file)
-    with tarfile.open(dev_file, "r:gz") as dev_tar:
-      fr_dev_file = dev_tar.getmember("dev/" + dev_name + ".fr")
-      en_dev_file = dev_tar.getmember("dev/" + dev_name + ".en")
-      fr_dev_file.name = dev_name + ".fr"  # Extract without "dev/" prefix.
-      en_dev_file.name = dev_name + ".en"
-      dev_tar.extract(fr_dev_file, directory)
-      dev_tar.extract(en_dev_file, directory)
-  return dev_path
-
-
 def basic_tokenizer(sentence):
   """Very basic tokenizer: split the sentence into a list of tokens."""
   words = []
@@ -110,9 +82,11 @@ def basic_tokenizer(sentence):
     words.extend(_WORD_SPLIT.split(space_separated_fragment))
   return [w for w in words if w]
 
+def twitter_tokenizer(sentence):
+  return nltk.tokenize.casual.casual_tokenize(sentence, preserve_case=False, reduce_len=True)
 
 def create_vocabulary(vocabulary_path, data_path, max_vocabulary_size,
-                      tokenizer=None, normalize_digits=True):
+                      tokenizer=twitter_tokenizer, normalize_digits=True):
   """Create vocabulary file (if it does not exist yet) from data file.
 
   Data file is assumed to contain one sentence per line. Each sentence is
@@ -141,7 +115,7 @@ def create_vocabulary(vocabulary_path, data_path, max_vocabulary_size,
         line = tf.compat.as_bytes(line)
         tokens = tokenizer(line) if tokenizer else basic_tokenizer(line)
         for w in tokens:
-          word = _DIGIT_RE.sub(b"0", w) if normalize_digits else w
+          word = _DIGIT_RE.sub(_NUMBER, w) if normalize_digits else w
           if word in vocab:
             vocab[word] += 1
           else:
@@ -185,7 +159,7 @@ def initialize_vocabulary(vocabulary_path):
 
 
 def sentence_to_token_ids(sentence, vocabulary,
-                          tokenizer=None, normalize_digits=True):
+                          tokenizer=twitter_tokenizer, normalize_digits=True):
   """Convert a string to list of integers representing token-ids.
 
   For example, a sentence "I have a dog" may become tokenized into
@@ -214,7 +188,7 @@ def sentence_to_token_ids(sentence, vocabulary,
 
 
 def data_to_token_ids(data_path, target_path, vocabulary_path,
-                      tokenizer=None, normalize_digits=True):
+                      tokenizer=twitter_tokenizer, normalize_digits=True):
   """Tokenize data file and turn into token-ids using given vocabulary file.
 
   This function loads data line-by-line from data_path, calls the above
@@ -244,7 +218,7 @@ def data_to_token_ids(data_path, target_path, vocabulary_path,
           tokens_file.write(" ".join([str(tok) for tok in token_ids]) + "\n")
 
 
-def prepare_wmt_data(data_dir, en_vocabulary_size, fr_vocabulary_size, tokenizer=None):
+def prepare_wmt_data(data_dir, en_vocabulary_size, fr_vocabulary_size, tokenizer=twitter_tokenizer):
   """Get WMT data into data_dir, create vocabularies and tokenize data.
 
   Args:
@@ -276,7 +250,7 @@ def prepare_wmt_data(data_dir, en_vocabulary_size, fr_vocabulary_size, tokenizer
 
 
 def prepare_data(data_dir, from_train_path, to_train_path, from_dev_path, to_dev_path, from_vocabulary_size,
-                 to_vocabulary_size, tokenizer=None):
+                 to_vocabulary_size, tokenizer=twitter_tokenizer):
   """Preapre all necessary files that are required for the training.
 
     Args:
