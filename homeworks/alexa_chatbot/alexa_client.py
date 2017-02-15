@@ -17,15 +17,11 @@ def talk_to_server(user_utterance):
 	try:
 		sock.sendall(user_utterance + '\n')
 
-		print("HERE")
-
 		while "\n" not in reply:
 			data = sock.recv(16)
 			if len(data) <= 0:
 				print("something went wrong")
 				break
-
-			print("here with " + str(data))
 
 			reply += data
 	except:
