@@ -5,8 +5,6 @@ Happy Hacking!
 """
 
 from ask import alexa
-import socket
-import sys
 import alexa_client
 
 def lambda_handler(request_obj, context=None):
@@ -32,7 +30,7 @@ def lambda_handler(request_obj, context=None):
 @alexa.default_handler()
 def default_handler(request):
     user_utterance = request.get_slot_map()["Text"]
-    alexa_reply = client.talk_to_server(user_utterance)
+    alexa_reply = alexa_client.talk_to_server(user_utterance)
             
     """ The default handler gets invoked if no handler is set for a request """
     return alexa.create_response(message=alexa_reply)
@@ -40,7 +38,7 @@ def default_handler(request):
 
 @alexa.request_handler("LaunchRequest")
 def launch_request_handler(request):
-    return alexa.create_response(message="Hello Welcome to this basic Alexa demo!")
+    return alexa.create_response(message="Hey there, what's going on?")
 
 
 @alexa.request_handler("SessionEndedRequest")
