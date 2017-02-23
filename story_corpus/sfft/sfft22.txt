@@ -1,0 +1,31 @@
+<body>
+<center>
+<a href="../../../cdshop/index.htm"><img src="../../../cdshop/cdinfo.jpg" border="0"></a><br>
+<a href="../../../index.htm">Sacred Texts</a> 
+<a href="../../index.htm">Legends and Sagas</a> 
+<a href="../index.htm">Celtic</a> 
+<a href="index.htm">Index</a> 
+<a href="sfft21.htm">Previous</a> 
+<a href="sfft23.htm">Next</a> 
+<hr>
+<a href="http://www.amazon.com/exec/obidos/ASIN/B0026FCJ10/internetsacredte">Buy this Book at Amazon.com</a>
+</center>
+<hr>
+<p align="CENTER"><font size="-1" color="GREEN"><a href="index.htm"><img src="img/tease.jpg"></a><br><i>Scottish Fairy and Folk Tales</i>, by George Douglas, [1901], at sacred-texts.com</font></p>
+<hr>  <h3 align="center">THE EAGLE AND THE WREN. <a name="fr_44"></a><a href="#fn_44"><font size="1">1</font></a>
+</h3>  
+<p>THE Eagle and the Wren once tried who could fly highest, and the victor was to be king of the birds. So the Wren flew straight up, and the Eagle flew in great circles, and when the Wren was tired he settled on the Eagle's back. When the Eagle was tired he stopped, and--</p>  
+<p>"Where art thou, Wren?" said the Eagle.</p>  
+<p>"I am here above thee," said the Wren.</p>  
+<p>And so the Wren won the match.</p>  
+<p>
+</p>  
+<hr>
+<h3 align="CENTER">Footnotes</h3>
+<p><a name="fn_44"></a><a href="sfft22.htm#fr_44">96:1</a> This story describes the flight of eagle and wren correctly enough.</p>
+<p></p>
+<hr>
+<center>
+<a href="sfft23.htm">Next: The Wren's Presumption</a>
+</center>
+</body>
