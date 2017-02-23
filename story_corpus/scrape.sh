@@ -16,12 +16,14 @@ cd $root
 for i in $(seq $num_start $num_end)
 do
 	padded_i=$(printf %02d $i)
-	in_file="${root}${padded_i}.htm" 	
-	out_file="${root}${padded_i}.txt" 	
+	in_file="${root}fb${padded_i}.htm" 	
+	out_file="${root}fb${padded_i}.html" 	
 
 	url="http://sacred-texts.com/neu/${country}/${root}/${in_file}"	
+	#url="http://sacred-texts.com/neu/${country}/lfb/${in_file}"	
 	echo "Extracting: $i: $url"
-	curl -s $url | nokogiri -e 'puts $_.search('\''body'\'')' > $out_file
+	# curl -s $url | nokogiri -e 'puts $_.search('\''body'\'')' > $out_file
+	curl -s $url > $out_file
 done
 
-echo "{\n\tname: '$4', \n\tauthor: '$5', \n\turl: 'http://sacred-texts.com/neu/${country}/${root}/index.htm' \n}" > meta.json
+echo "{\n\tname: '$name', \n\tauthor: '$author', \n\turl: 'http://sacred-texts.com/neu/${country}/${root}/index.htm' \n}" > meta.json
