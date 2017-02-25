@@ -49,6 +49,15 @@ case $action in
 	test)
 		python translate.py --decode --data_dir $data_dir --train_dir $train_dir
 	;;
+	bleu)
+		python translate.py --bleu \
+                            --data_dir $data_dir \
+                            --train_dir $train_dir \
+                            --from_train_data "${raw_data_dir}/train_chat_q.txt"  \
+							--to_train_data   "${raw_data_dir}/train_chat_a.txt" \
+							--from_dev_data   "${raw_data_dir}/val_chat_q.txt" \
+							--to_dev_data     "${raw_data_dir}/val_chat_a.txt"
+	;;
 	*)
 		# unknown option
 		echo "USAGE: run.sh [get_data|train|test]"
