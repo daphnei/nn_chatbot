@@ -18,7 +18,7 @@ with open('hca.orig', "r") as in_file:
 
 		if newline_count >= 4 :
 			if len(buffer.strip()) > 0:
-				out_file_name = "hca_%.2d.txt" % index
+				out_file_name = "hca_%.2d.html" % index
 				print("Saving file: " + out_file_name)
 				with open(out_file_name, "w") as out_file:
 					out_file.write(buffer)
