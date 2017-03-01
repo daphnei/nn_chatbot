@@ -5,6 +5,7 @@ def clean_story(file_name):
 	print('Processing story ' + file_name)	
 
 	story = ""
+	title = ""
 
 	# extract the basic data out of html flags
 	with open(file_name) as f:
@@ -12,9 +13,8 @@ def clean_story(file_name):
 		for line in f:
 			if i == 1:
 				title = line.strip()
-			story = story + line.strip()
-
-	title = title.encode('utf-8')
-	story = story.encode('utf-8')
+			else:
+				story = story + line.strip() + " " 
+			i = i + 1
 
 	return title, story
