@@ -19,12 +19,12 @@ do
 	in_file="${root}${padded_i}.htm" 	
 	out_file="${root}${padded_i}.html" 	
 
-	# url="http://sacred-texts.com/neu/${country}/${root}/${in_file}"	
-	url="http://sacred-texts.com/neu/${country}/${in_file}"	
+	url="http://sacred-texts.com/${country}/${root}/${in_file}"	
+	# url="http://sacred-texts.com/neu/${country}/${in_file}"	
 	echo "Extracting: $i: $url"
 	# curl -s $url | nokogiri -e 'puts $_.search('\''body'\'')' > $out_file
 	curl -s $url > $out_file
 done
 
-echo "{\n\tname: '$name', \n\tauthor: '$author', \n\turl: 'http://sacred-texts.com/neu/${root}/index.htm' \n}" > meta.json
-# echo "{\n\tname: '$name', \n\tauthor: '$author', \n\turl: 'http://sacred-texts.com/neu/${country}/${root}/index.htm' \n}" > meta.json
+# echo "{\n\tname: '$name', \n\tauthor: '$author', \n\turl: 'http://sacred-texts.com/neu/${root}/index.htm' \n}" > meta.json
+echo "{\n\tname: '$name', \n\tauthor: '$author', \n\turl: 'http://sacred-texts.com/${country}/${root}/index.htm' \n}" > meta.json
