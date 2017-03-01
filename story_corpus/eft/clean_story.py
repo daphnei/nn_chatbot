@@ -16,7 +16,5 @@ def clean_story(file_name):
 	for par in soup.find_all('p'):
 		story += par.text
 
-	title = title.encode('utf-8')
-	story = story.encode('utf-8')
 
 	return title, story

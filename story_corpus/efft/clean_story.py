@@ -23,7 +23,5 @@ def clean_story(file_name):
 		else:
 			story += par.text
 
-	title = title.encode('utf-8')
-	story = story.encode('utf-8')
 
 	return title, story

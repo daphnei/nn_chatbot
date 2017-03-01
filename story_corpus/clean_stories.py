@@ -3,7 +3,7 @@ from os.path import isfile, join
 from importlib import import_module
 import sys
 import nltk.data
-# from sfft.parser import StoryParser  
+# from sfft.parser import StoryParser
 
 def clean_directory(dir_name):
 	tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
@@ -25,9 +25,9 @@ def clean_directory(dir_name):
 
 			# output the story
 			with open(out_name, mode='w') as f:
-				f.write(title)
+				f.write(title.encode('utf-8'))
 				f.write('\n')
-				f.write(story)
+				f.write(story.encode('utf-8'))
 
 
 if __name__ == "__main__":

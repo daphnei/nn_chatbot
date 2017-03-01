@@ -18,10 +18,7 @@ def clean_story(file_name):
 			break
 		story += block.text
 
-	title = title.encode('utf-8')
-
 	# remove [1] etc for references
-	story = story.encode('utf-8')
 	story = re.sub('\[\d+]', '', story)
 	story = re.sub('\*', '', story)
 
