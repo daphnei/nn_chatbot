@@ -7,22 +7,17 @@ def clean_story(file_name):
 	with open(file_name) as f:
 		soup = BS(''.join(f.readlines()), 'html.parser')
 
-	title = ''
+	title = soup.title.text
 	story = ''
 
 	number_of_skips = 1
-
 	for par in soup.find_all('p'):
 		if number_of_skips > 0:
 			number_of_skips -= 1
-		elif len(par.attrs):
-			title += par.text
-		elif not par.text.startswith('['):
-			story += par.text
-		else:
+		elif 'Next:' in par.text:
 			break
+		elif not len(par.attrs):
+			story += par.text
 
-	title = title.encode('utf-8')
-	story = story.encode('utf-8')
 
 	return title, story
