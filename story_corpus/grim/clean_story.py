@@ -16,6 +16,9 @@ def clean_story(file_name):
 				if len(title) > 0:
 					got_title = True
 			else:
-				story = story + line.strip() + " " 
+				story = story + line.strip() + " "
+
+	title = ''.join([i if ord(i) < 128 else ' ' for i in title])
+	story = ''.join([i if ord(i) < 128 else '' for i in story])
 
 	return title, story
