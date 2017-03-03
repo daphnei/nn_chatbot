@@ -1,8 +1,8 @@
 CLEVER HANS
- The mother of Hans said: Whither away, Hans?
-Hans answered: To Gretel.
+ The mother of Hans said:    Whither away, Hans?
+Hans answered:    To Gretel.
 Behave well, Hans.
-Oh, Ill behave well.
+Oh, I   ll behave well.
 Goodbye, mother.
 Goodbye, Hans.
 Hans comes to Gretel.
@@ -10,7 +10,7 @@ Good day, Gretel.
 Good day, Hans.
 What do you bring that is good?
 I bring nothing, I want to have something given me.
-Gretel presents Hans with a needle, Hans says: Goodbye, Gretel.
+Gretel presents Hans with a needle, Hans says:    Goodbye, Gretel.
 Goodbye, Hans.
 Hans takes the needle, sticks it into a hay-cart, and follows the cart home.
 Good evening, mother.
@@ -25,11 +25,11 @@ Where is the needle, Hans?
 Stuck in the hay-cart.
 That was ill done, Hans.
 You should have stuck the needle in your sleeve.
-Never mind, Ill do better next time.
+Never mind, I   ll do better next time.
 Whither away, Hans?
 To Gretel, mother.
 Behave well, Hans.
-Oh, Ill behave well.
+Oh, I   ll behave well.
 Goodbye, mother.
 Goodbye, Hans.
 Hans comes to Gretel.
@@ -52,12 +52,12 @@ What did Gretel give you?
 Gave me a knife.
 Where is the knife, Hans?
 Stuck in my sleeve.
-Thats ill done, Hans, you should have put the knife in your pocket.
+That   s ill done, Hans, you should have put the knife in your pocket.
 Never mind, will do better next time.
 Whither away, Hans?
 To Gretel, mother.
 Behave well, Hans.
-Oh, Ill behave well.
+Oh, I   ll behave well.
 Goodbye, mother.
 Goodbye, Hans.
 Hans comes to Gretel.
@@ -80,12 +80,12 @@ What did Gretel give you?
 She gave me a goat.
 Where is the goat, Hans?
 Put it in my pocket.
-That was ill done, Hans, you should have put a rope round the goats neck.
+That was ill done, Hans, you should have put a rope round the goat   s neck.
 Never mind, will do better next time.
 Whither away, Hans?
 To Gretel, mother.
 Behave well, Hans.
-Oh, Ill behave well.
+Oh, I   ll behave well.
 Goodbye, mother.
 Goodbye, Hans.
 Hans comes to Gretel.
@@ -114,7 +114,7 @@ Never mind, will do better next time.
 Whither away, Hans?
 To Gretel, mother.
 Behave well, Hans.
-Ill behave well.
+I   ll behave well.
 Goodbye, mother.
 Goodbye, Hans.
 Hans comes to Gretel.
@@ -140,7 +140,7 @@ Never mind, will do better next time.
 Whither away, Hans?
 To Gretel, mother.
 Behave well, Hans.
-Ill behave well.
+I   ll behave well.
 Goodbye, mother.
 Goodbye, Hans.
 Hans comes to Gretel.
@@ -148,7 +148,7 @@ Good day, Gretel.
 Good day, Hans.
 What good thing do you bring?
 I bring nothing, but would have something given.
-Gretel says to Hans: I will go with you.
+Gretel says to Hans:    I will go with you.
 Hans takes Gretel, ties her to a rope, leads her to the rack, and binds her fast.
 Then Hans goes to his mother.
 Good evening, mother.
@@ -163,5 +163,5 @@ Where have you left Gretel?
 I led her by the rope, tied her to the rack, and scattered some grass for her.
 That was ill done, Hans, you should have cast friendly eyes on her.
 Never mind, will do better.
-Hans went into the stable, cut out all the calves and sheeps eyes, and threw them in Gretels face.
+Hans went into the stable, cut out all the calves    and sheep   s eyes, and threw them in Gretel   s face.
 Then Gretel became angry, tore herself loose and ran away, and was no longer the bride of Hans.

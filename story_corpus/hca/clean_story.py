@@ -1,5 +1,3 @@
-from bs4 import BeautifulSoup as BS
-import re
 def clean_story(file_name):
 
 	print('Processing story ' + file_name)	

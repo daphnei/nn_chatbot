@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup as BS
-import re
+import Util
+
 def clean_story(file_name):
 
 	print('Processing story ' + file_name)
@@ -8,18 +9,13 @@ def clean_story(file_name):
 		soup = BS(''.join(f.readlines()), 'html.parser')
 
 	title = ''
-	story = ''
 
 	for par in soup.find_all('p'):
 		title += par.text
 
-	for block in soup.find_all('blockquote'):
-		if block.text.startswith('*'):
-			break
-		story += block.text
+	parser = Util.Parser()
+	parser.end_on_asterix_beg = True
 
-	# remove [1] etc for references
-	story = re.sub('\[\d+]', '', story)
-	story = re.sub('\*', '', story)
+	story = parser.parse(soup.find_all('blockquote')).remove_digit_references().remove_asterix().get_text()
 
 	return title, story

@@ -3,7 +3,6 @@ from os.path import isfile, join
 from importlib import import_module
 import sys
 import nltk.data
-# from sfft.parser import StoryParser
 
 def clean_directory(dir_name):
 	tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
@@ -22,6 +21,9 @@ def clean_directory(dir_name):
 			# remove all new lines from the story
 			story = story.replace('\n', ' ')
 			story = '\n'.join(tokenizer.tokenize(story))
+			story = story.replace('\n""', '"\n"')
+			story = story.replace('\n)', ')')
+
 
 			# output the story
 			with open(out_name, mode='w') as f:

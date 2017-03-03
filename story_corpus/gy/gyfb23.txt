@@ -1,5 +1,5 @@
 The Grey Fairy Book: The Story of the Fair Circassians
-'We were born in Circassia of poor people, and my sister's name is Tezila and mine Dely.
+ 'We were born in Circassia of poor people, and my sister's name is Tezila and mine Dely.
 Having nothing but our beauty to help us in life, we were carefully trained in all the accomplishments that give pleasure.
 We were both quick to learn, and from our childhood could play all sorts of instruments, could sing, and above all could dance.
 We were besides, lively and merry, as in spite of our misfortunes we are to this day.
@@ -14,8 +14,8 @@ And if our parents' hearts were touched by their beauty, our own were not any ha
 '"Fear nothing, lovely Dely," he whispered, "from one who never knew love till he saw you.
 My name," he went on, "is Prince Delicate, and I am the son of the king of the Isle of Black Marble.
 My friend, who travels with me, is one of the richest nobles of my country, and the secrets which he knows are the envy of the Sultan himself.
-And we left our native country because my father wished me to marry a lady of great beauty, but with one eye a trifle smaller than the other.
-"'My vanity was flattered at so speedy a conquest, and I was charmed with the way the young man had declared his passion.
+And we left our native country because my father wished me to marry a lady of great beauty, but with one eye a trifle smaller than the other."
+'My vanity was flattered at so speedy a conquest, and I was charmed with the way the young man had declared his passion.
 I turned my eyes slowly on him, and the look I gave him caused him almost to lose his senses.
 He fell fainting forward, and I was unable to move till Tezila, who had hastily put on a dress, ran to my assistance together with Thelamis, the young noble of whom the Prince had spoken.
 'As soon as we were all ourselves again we began to bewail our fate, and the journey that we were to take that very day to Constantinople.
@@ -26,7 +26,8 @@ These boxes were large enough for us to sleep in comfortably, and as there was a
 'For several days we journeyed on, feeling sad and anxious as to what might become of us, when one day as I was looking out of the window of our room, I heard my name called, and beheld a beautifully dressed girl jumping out of the box on the other side of our camel.
 One glance told me that it was the prince, and my heart bounded with joy.
 It was, he said, Thelamis's idea to disguise him like this, and that he himself had assumed the character of a slave-dealer who was taking this peerless maiden as a present to the Sultan.
-Thelamis had also persuaded the officer in charge of the caravan to let him hire the vacant box, so it was easy for the prince to scramble out of his own window and approach ours.This ingenious trick enchanted us, but our agreeable conversation was soon interrupted by the attendants, who perceived that the camel was walking in a crooked manner and came to find out what was wrong.
+Thelamis had also persuaded the officer in charge of the caravan to let him hire the vacant box, so it was easy for the prince to scramble out of his own window and approach ours.
+This ingenious trick enchanted us, but our agreeable conversation was soon interrupted by the attendants, who perceived that the camel was walking in a crooked manner and came to find out what was wrong.
 Luckily they were slow in their movements, and the prince had just time to get back to his own box and restore the balance, before the trick was discovered.
 'But neither the prince nor his friend had any intention of allowing us to enter the Sultan's palace, though it was difficult to know how we were to escape, and what was to become of us when once we had escaped.
 At length, one day as we were drawing near Constantinople, we learned from the prince that Thelamis had made acquaintance with a holy dervish whom he had met on the road, and had informed him that we were his sisters, who were being sold as slaves against his will.
@@ -36,8 +37,8 @@ The risk was great, but it was our only chance.
 We next went back some distance along the way we had come, then, striking into another road, reached at last the retreat prepared for us by the dervish.
 Here we found food and rest, and I need not say what happiness it was to be free once more.
 'The dervish soon became a slave to our beauty, and the day after our escape he proposed that we should allow him to conduct us to an inn situated at a short distance, where we should find two Jews, owners of precious talismans which did not really belong to them.
-"Try," said the dervish, "by some means to get possession of them.
-"'The inn, though not on the direct road to Constantinople, was a favourite one with merchants, owing to the excellence of the food, and on our arrival we discovered at least six or eight other people who had stopped for refreshment.
+"Try," said the dervish, "by some means to get possession of them."
+'The inn, though not on the direct road to Constantinople, was a favourite one with merchants, owing to the excellence of the food, and on our arrival we discovered at least six or eight other people who had stopped for refreshment.
 They greeted us politely, and we sat down to table together.
 'In a short time the two men described by the dervish entered the room, and at a sign from him my sister made room at her side for one, while I did the same for the other.
 'Now the dervish had happened to mention that "their brother had danced."
@@ -68,8 +69,8 @@ Not being able to sleep I rose from my bed and wandered into the forest, along t
 Suddenly I heard in the distance the sound of a horse's hoofs, and in a few moments the prince had flung himself down and was by my side.
 "Ah, how I adore you!"
 he exclaimed; "Thelamis's love will never equal mine."
-The words were hardly out of his mouth when I heard a slight noise behind, and before we could turn round both our heads were rolling in front of us, while the voice of Thelamis cried:'"Perjured wretches, answer me; and you, faithless Tezila, tell me why you have betrayed me like this?
-"'Then I understood what had happened, and that, in his rage, he had mistaken me for my sister.
+The words were hardly out of his mouth when I heard a slight noise behind, and before we could turn round both our heads were rolling in front of us, while the voice of Thelamis cried: '"Perjured wretches, answer me; and you, faithless Tezila, tell me why you have betrayed me like this?"
+'Then I understood what had happened, and that, in his rage, he had mistaken me for my sister.
 '"Alas," replied my head in weak tones, "I am not Tezila, but Dely, whose life you have destroyed, as well as that of your friend."
 At this Thelamis paused and seemed to reflect for an instant.
 '"Be not frightened," he said more quietly, "I can make you whole again," and laying a magic powder on our tongues he placed our heads on our necks.
@@ -82,8 +83,8 @@ It was only by the light of their torches that we understood what had occurred.
 Indeed the first thought of both of us was that we must have changed clothes.
 'Now in spite of what we may say, we all prefer our own bodies to those of anybody else, so notwithstanding our love for each other, at first we could not help feeling a little cross with Thelamis.
 However, so deep was the prince's passion for me, that very soon he began to congratulate himself on the change. "
-My happiness is perfect," he said; "my heart, beautiful Dely, has always been yours, and now I have your head also.
-"'But though the prince made the best of it, Thelamis was much ashamed of his stupidity.
+My happiness is perfect," he said; "my heart, beautiful Dely, has always been yours, and now I have your head also."
+'But though the prince made the best of it, Thelamis was much ashamed of his stupidity.
 "I have," he said hesitatingly, "two other pastilles which have the same magic properties as those I used before.
 Let me cut off your heads again, and that will put matters straight."
 The proposal sounded tempting, but was a little risky, and after consulting together we decided to let things remain as they were.
@@ -103,14 +104,14 @@ But then came the question as to whether the nobles would recognise the prince w
 The greater part of the senators and nobles openly professed that they would much have preferred the rightful heir, but as they could not recognise him either in the prince or me, they chose to consider us as impostors and threw us into prison.
 'A few days later Tezila and Thelamis, who had followed us to the capital, came to tell us that the new queen had accused us of high treason, and had herself been present at our trial—which was conducted without us.
 They had been in mortal terror as to what would be our sentence, but by a piece of extraordinary luck we had been condemned to be beheaded.
-'I told my sister that I did not see exactly where the luck came in, but Thelamis interrupted me rudely:'"What!"
+'I told my sister that I did not see exactly where the luck came in, but Thelamis interrupted me rudely: '"What!"
 he cried, "of course I shall make use of the pastilles, and—" but here the officers arrived to lead us to the great square where the execution was to take place—for Okimpare was determined there should be no delay.
 'The square was crowded with people of all ages and all ranks, and in the middle a platform had been erected on which was the scaffold, with the executioner, in a black mask, standing by.
 At a sign from him I mounted first, and in a moment my head was rolling at his feet.
 With a bound my sister and Thelamis were beside me, and like lightning Thelamis seized the sabre from the headsman, and cut off the head of the prince.
 And before the multitude had recovered from their astonishment at these strange proceedings, our bodies were joined to our right heads, and the pastilles placed on our tongues.
-Then Thelamis led the prince to the edge of the platform and presented him to the people, saying, "Behold your lawful king.
-"'Shouts of joy rent the air at the sound of Thelamis's words, and the noise reached Okimpare in the palace.
+Then Thelamis led the prince to the edge of the platform and presented him to the people, saying, "Behold your lawful king."
+'Shouts of joy rent the air at the sound of Thelamis's words, and the noise reached Okimpare in the palace.
 Smitten with despair at the news, she fell down unconscious on her balcony, and was lifted up by the slaves and taken back to her own house.
 'Meanwhile our happiness was all turned to sorrow.
 I had rushed up to the prince to embrace him fondly, when he suddenly grew pale and staggered.
@@ -119,16 +120,19 @@ and leaning his head on my shoulder he expired quietly, for one of the arteries 
 'Not knowing what I did I staggered towards the sabre which was lying near me, with the intention of following my beloved prince as speedily as possible.
 And when Thelamis seized my hand (but only just in time), in my madness I turned the sabre upon him, and he fell struck through the heart at my feet.'
 The whole company were listening to the story with breathless attention, when it became plain that Dely could go no further, while Tezila had flung herself on a heap of cushions and hidden her face.
-Zambac ordered her women to give them all the attention possible, and desired they should be carried into her own rooms.When the two sisters were in this condition, Ibrahim, who was a very prudent young man, suggested to his parents that, as the two Circassians were both unconscious, it would be an excellent opportunity to search them and see if the talismans belonging to the daughters of Siroco were concealed about their persons.
-But the Bassa, shocked at the notion of treating his guests in so inhospitable a manner, refused to do anything of the kind, adding that the next day he hoped to persuade them to give the talismans up of their own free will.By this time it was nearly midnight and Neangir, who was standing near the Jewess Sumi, drew out the portrait of Argentine, and heard with delight that she was even more beautiful than her picture.
+Zambac ordered her women to give them all the attention possible, and desired they should be carried into her own rooms.
+When the two sisters were in this condition, Ibrahim, who was a very prudent young man, suggested to his parents that, as the two Circassians were both unconscious, it would be an excellent opportunity to search them and see if the talismans belonging to the daughters of Siroco were concealed about their persons.
+But the Bassa, shocked at the notion of treating his guests in so inhospitable a manner, refused to do anything of the kind, adding that the next day he hoped to persuade them to give the talismans up of their own free will.
+By this time it was nearly midnight and Neangir, who was standing near the Jewess Sumi, drew out the portrait of Argentine, and heard with delight that she was even more beautiful than her picture.
 Everyone was waiting on tip-toe for the appearance of the two watches, who were expected when the clock struck twelve to come in search of Sumi, and that there might be no delay the Bassa ordered all the doors to be flung wide open.
-It was done, and there entered not the longed-for watches, but the page who had been sent away in disgrace.Then the Bassa arose in wrath.
-'Azemi,' he said, 'did I not order you to stand no more in my presence?
-''My lord,' replied Azemi, modestly, 'I was hidden outside the door, listening to the tale of the two Circassians.
+It was done, and there entered not the longed-for watches, but the page who had been sent away in disgrace.
+Then the Bassa arose in wrath.
+'Azemi,' he said, 'did I not order you to stand no more in my presence?'
+'My lord,' replied Azemi, modestly, 'I was hidden outside the door, listening to the tale of the two Circassians.
 And as I know you are fond of stories, give me also leave to tell you one.
-I promise you it shall not be long.
-''Speak on,' replied the Bassa, 'but take heed what you say.
-''My lord,' began Azemi, 'this morning I was walking in the town when I noticed a man going in the same direction followed by a slave.
+I promise you it shall not be long.'
+'Speak on,' replied the Bassa, 'but take heed what you say.'
+'My lord,' began Azemi, 'this morning I was walking in the town when I noticed a man going in the same direction followed by a slave.
 He entered a baker's shop, where he bought some bread which he gave to the slave to carry.
 I watched him and saw that he purchased many other kinds of provisions at other places, and when the slave could carry no more his master commanded him to return home and have supper ready at midnight.
 'When left alone the man went up the street, and turning into a jeweller's shop, brought out a watch that as far as I could see was made of silver.
@@ -139,17 +143,23 @@ I hastened to his house, but he had gone out, and I could only find the slave, w
 Believing me to be one of his friends, he begged me to wait, and showed me into a room where I saw the two watches lying on the table.
 I put them in my pocket, leaving the four hundred sequins in place of the gold watch and three gold pieces which I knew to be the price of the other.
 As you know the watches never remain with the person who buys them, this man may think himself very lucky to get back his money.
-I have wound them both up, and at this instant Aurora and Argentine are locked safely into my own room.
-'Everybody was so delighted to hear this news that Azemi was nearly stifled with their embraces, and Neangir could hardly be prevented from running to break in the door, though he did not even know where the page slept.But the page begged to have the honour of fetching the ladies himself, and soon returned leading them by the hand.For some minutes all was a happy confusion, and Ibrahim took advantage of it to fall on his knees before Aurora, and search in the fifth fold of her dress for the missing coral bead.
-The Book of Spells had told the truth; there it was, and as the chaplet was now complete the young man's days of seeking were over.In the midst of the general rejoicing Hassan alone bore a gloomy face.'Alas!'
+I have wound them both up, and at this instant Aurora and Argentine are locked safely into my own room.'
+Everybody was so delighted to hear this news that Azemi was nearly stifled with their embraces, and Neangir could hardly be prevented from running to break in the door, though he did not even know where the page slept.
+But the page begged to have the honour of fetching the ladies himself, and soon returned leading them by the hand.
+For some minutes all was a happy confusion, and Ibrahim took advantage of it to fall on his knees before Aurora, and search in the fifth fold of her dress for the missing coral bead.
+The Book of Spells had told the truth; there it was, and as the chaplet was now complete the young man's days of seeking were over.
+In the midst of the general rejoicing Hassan alone bore a gloomy face.
+'Alas!'
 he said, 'everyone is happy but the miserable being you see before you.
-I have lost the only consolation in my grief, which was to feel that I had a brother in misfortune!
-''Be comforted,' replied the Bassa; 'sooner or later the dervish who stole the pink bag is sure to be found.
-'Supper was then served, and after they had all eaten of rare fruits which seemed to them the most delicious in the whole world, the Bassa ordered the flask containing the elixir of love to be brought and the young people to drink of it.
-Then their eyes shone with a new fire, and they swore to be true to each other till death.This ceremony was scarcely over when the clock struck one, and in an instant Aurora and Argentine had vanished, and in the place where they stood lay two watches.
+I have lost the only consolation in my grief, which was to feel that I had a brother in misfortune!'
+'Be comforted,' replied the Bassa; 'sooner or later the dervish who stole the pink bag is sure to be found.'
+Supper was then served, and after they had all eaten of rare fruits which seemed to them the most delicious in the whole world, the Bassa ordered the flask containing the elixir of love to be brought and the young people to drink of it.
+Then their eyes shone with a new fire, and they swore to be true to each other till death.
+This ceremony was scarcely over when the clock struck one, and in an instant Aurora and Argentine had vanished, and in the place where they stood lay two watches.
 Silence fell upon all the company—they had forgotten the enchantment; then the voice of Azemi was heard asking if he might be allowed to take charge of the watches till the next day, pledging his head to end their enchantment.
 With the consent of Sumi, this was granted, and the Bassa gave Azemi a purse containing a thousand sequins, as a reward for the services he had already rendered to them.
-After this everybody went to his own apartment.Azemi had never possessed so much money before, and never closed his eyes for joy the whole night long.
+After this everybody went to his own apartment.
+Azemi had never possessed so much money before, and never closed his eyes for joy the whole night long.
 Very early he got up and went into the garden, thinking how he could break the enchantment of the daughters of Siroco.
 Suddenly the soft tones of a woman fell on his ear, and peeping through the bushes he saw Tezila, who was arranging flowers in her sister's hair.
 The rustling of the leaves caused Dely to start; she jumped up as if to fly, but Azemi implored her to remain and begged her to tell him what happened to them after the death of their lovers, and how they had come to find the dervish.
@@ -159,37 +169,42 @@ In this design we succeeded so well that in a short time the ladies of the capit
 She consented, and commanded us to be placed on board a ship, with our slave Gouloucou.
 'On the shore we saw an old man who was busily engaged in drowning some little black pigs, talking to them all the while, as if they could understand him.
 '"Accursed race," said he, "it is you who have caused all the misfortunes of him to whom I gave the magic bracelet.
-Perish all of you!
-"'We drew near from curiosity, and recognised in him the dervish who had sheltered us on our first escape from the caravan.
+Perish all of you!"
+'We drew near from curiosity, and recognised in him the dervish who had sheltered us on our first escape from the caravan.
 'When the old man discovered who we were he was beside himself with pleasure, and offered us a refuge in the cave where he lived.
 We gladly accepted his offer, and to the cave we all went, taking with us the last little pig, which he gave us as a present.
-'"The Bassa of the Sea," he added, "will pay you anything you like to ask for it.
-"'Without asking why it was so precious I took the pig and placed it in my work bag, where it has been ever since.
-Only yesterday we offered it to the Bassa, who laughed at us, and this so enraged us against the dervish that we cut off his beard when he was asleep, and now he dare not show himself.
-''Ah,' exclaimed the page, 'it is not fitting that such beauty should waste itself in making other people miserable.
+'"The Bassa of the Sea," he added, "will pay you anything you like to ask for it."
+'Without asking why it was so precious I took the pig and placed it in my work bag, where it has been ever since.
+Only yesterday we offered it to the Bassa, who laughed at us, and this so enraged us against the dervish that we cut off his beard when he was asleep, and now he dare not show himself.'
+'Ah,' exclaimed the page, 'it is not fitting that such beauty should waste itself in making other people miserable.
 Forget the unhappy past and think only of the future.
 And accept, I pray you, this watch, to mark the brighter hours in store.'
 So saying he laid the watch upon her knee.
 Then he turned to Tezila.
 'And you fair maiden, permit me to offer you this other watch.
 True it is only of silver, but it is all I have left to give.
-And I feel quite sure that you must have somewhere a silver seal, that will be exactly the thing to go with it.
-''Why, so you have,' cried Dely; 'fasten your silver seal to your watch, and I will hang my gold one on to mine.
-'The seals were produced, and, as Azemi had guessed, they were the talismans which the two Circassians had taken from Izif and Izouf, mounted in gold and silver.
-As quick as lightning the watches slid from the hands of Tezila and her sister, and Aurora and Argentine stood before them, each with her talisman on her finger.At first they seemed rather confused themselves at the change which had taken place, and the sunlight which they had not seen for so long, but when gradually they understood that their enchantment had come to an end, they could find no words to express their happiness.The Circassians could with difficulty be comforted for the loss of the talismans, but Aurora and Argentine entreated them to dry their tears, as their father, Siroco, who was governor of Alexandria, would not fail to reward them in any manner they wished.
+And I feel quite sure that you must have somewhere a silver seal, that will be exactly the thing to go with it.'
+'Why, so you have,' cried Dely; 'fasten your silver seal to your watch, and I will hang my gold one on to mine.'
+The seals were produced, and, as Azemi had guessed, they were the talismans which the two Circassians had taken from Izif and Izouf, mounted in gold and silver.
+As quick as lightning the watches slid from the hands of Tezila and her sister, and Aurora and Argentine stood before them, each with her talisman on her finger.
+At first they seemed rather confused themselves at the change which had taken place, and the sunlight which they had not seen for so long, but when gradually they understood that their enchantment had come to an end, they could find no words to express their happiness.
+The Circassians could with difficulty be comforted for the loss of the talismans, but Aurora and Argentine entreated them to dry their tears, as their father, Siroco, who was governor of Alexandria, would not fail to reward them in any manner they wished.
 This promise was soon confirmed by Siroco himself, who came into the garden with the Bassa and his two sons, and was speedily joined by the ladies of the family.
 Only Hassan was absent.
-It was the hour in which he was condemned to bewail his ebony hand.To the surprise of all a noise was at this moment heard in a corner of the terrace, and Hassan himself appeared surrounded by slaves, clapping his hands and shouting with joy.
+It was the hour in which he was condemned to bewail his ebony hand.
+To the surprise of all a noise was at this moment heard in a corner of the terrace, and Hassan himself appeared surrounded by slaves, clapping his hands and shouting with joy.
 'I was weeping as usual,' cried he, 'when all at once the tears refused to come to my eyes, and on looking down at my hand I saw that its blackness had vanished.
-And now, lovely Zelida, nothing prevents me any longer from offering you the hand, when the heart has been yours always.
-'But though Hassan never thought of asking or caring what had caused his cure, the others were by no means so indifferent.
+And now, lovely Zelida, nothing prevents me any longer from offering you the hand, when the heart has been yours always.'
+But though Hassan never thought of asking or caring what had caused his cure, the others were by no means so indifferent.
 It was quite clear that the little black pig must be dead—but how, and when?
 To this the slaves answered that they had seen that morning a man pursued by three others, and that he had taken refuge in the cavern which they had been left to guard.
-Then, in obedience to orders, they had rolled a stone over the entrance.Piercing shrieks interrupted their story, and a man, whom the Circassians saw to be the old dervish, rushed round the corner of the terrace with the three Jews behind him.
-When the fugitive beheld so many people collected together, he turned down another path, but the slaves captured all four and brought them before their master.What was the surprise of the Bassa when he beheld in the old dervish the man who had given the chaplet, the copper plaque, and the bracelet to his three sons.
+Then, in obedience to orders, they had rolled a stone over the entrance.
+Piercing shrieks interrupted their story, and a man, whom the Circassians saw to be the old dervish, rushed round the corner of the terrace with the three Jews behind him.
+When the fugitive beheld so many people collected together, he turned down another path, but the slaves captured all four and brought them before their master.
+What was the surprise of the Bassa when he beheld in the old dervish the man who had given the chaplet, the copper plaque, and the bracelet to his three sons.
 'Fear nothing, holy father,' he said, 'you are safe with me.
-But tell us, how came you here?
-''My lord,' explained the dervish, 'when my beard was cut off during my sleep by the two Circassians, I was ashamed to appear before the eyes of men, and fled, bearing with me the pink silk bag.
+But tell us, how came you here?'
+'My lord,' explained the dervish, 'when my beard was cut off during my sleep by the two Circassians, I was ashamed to appear before the eyes of men, and fled, bearing with me the pink silk bag.
 In the night these three men fell in with me, and we passed some time in conversation, but at dawn, when it was light enough to see each other's faces, one of them exclaimed that I was the dervish travelling with the two Circassians who had stolen the talismans from the Jews.
 I jumped up and tried to fly to my cave, but they were too quick for me, and just as we reached your garden they snatched the bag which contained the little black pig and flung it into the sea.
 By this act, which delivers your son, I would pray you to forgive them for any wrongs they may have done you—nay more, that you will recompense them for it.'

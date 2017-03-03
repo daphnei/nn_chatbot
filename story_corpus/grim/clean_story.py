@@ -1,5 +1,4 @@
-from bs4 import BeautifulSoup as BS
-import re
+import Util
 def clean_story(file_name):
 
 	print('Processing story ' + file_name)	
@@ -18,7 +17,7 @@ def clean_story(file_name):
 			else:
 				story = story + line.strip() + " "
 
-	title = ''.join([i if ord(i) < 128 else ' ' for i in title])
-	story = ''.join([i if ord(i) < 128 else '' for i in story])
+	title = Util.remove_non_ascii(title)
+	story = Util.remove_non_ascii(story)
 
 	return title, story

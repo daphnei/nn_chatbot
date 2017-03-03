@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup as BS
-import re
+import Util
 def clean_story(file_name):
 
 	print('Processing story ' + file_name)
@@ -7,18 +7,11 @@ def clean_story(file_name):
 	with open(file_name) as f:
 		soup = BS(''.join(f.readlines()), 'html.parser')
 
-	title = ''
-	story = ''
+	title = soup.find_all('p')[0].text
 
-	for par in soup.find_all('p'):
-		if len(par.attrs):
-			title += par.text
-		if par.text.strip().startswith('['):
-			break
-		elif not len(par.attrs) and 'Next:' not in par.text:
-			story += par.text
-
-	# remove [1] etc for references
-	story = re.sub('\[\w+]', '', story)
+	parser = Util.Parser()
+	parser.skip_non_empty_attrs = True
+	parser.skip_on_bracket_beq = True
+	story = parser.parse(soup.find_all('p')).remove_all_references().get_text();
 
 	return title, story

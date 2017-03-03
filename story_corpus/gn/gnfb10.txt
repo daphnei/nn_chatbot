@@ -1,5 +1,5 @@
 The Green Fairy Book: Prince Narcissus and the Princess Potentilla
-Once upon a time there lived a King and Queen who, though it is a very long while since they died, were much the same in their tastes and pursuits as people nowadays.
+ Once upon a time there lived a King and Queen who, though it is a very long while since they died, were much the same in their tastes and pursuits as people nowadays.
 The King, who was called Cloverleaf, liked hunting better than anything else; but he nevertheless bestowed as much care upon his kingdom as he felt equal to—that is to say, he never made an end of folding and unfolding the State documents.
 As to the Queen, she had once been very pretty, and she liked to believe that she was so still, which is, of course, always made quite easy for queens.
 Her name was Frivola, and her one occupation in life was the pursuit of amusement.
@@ -20,7 +20,8 @@ But as soon as he was grown up she sent him out to see the world for himself, th
 Before he started she gave him a ring which would render him invisible when he put it on his finger.
 These rings seem to be quite common; you must often have heard of them, even if you have never seen one.
 It was in the course of the Prince's wanderings, in search of experience of men and things, that he came to the court of Queen Frivola, where he was extremely well received.
-The Queen was delighted with him, so were all her ladies; and the King was very polite to him, though he did not quite see why the whole court was making such a fuss over him.Prince Narcissus enjoyed all that went on, and found the time pass very pleasantly.
+The Queen was delighted with him, so were all her ladies; and the King was very polite to him, though he did not quite see why the whole court was making such a fuss over him.
+Prince Narcissus enjoyed all that went on, and found the time pass very pleasantly.
 Before long, of course, he heard the story about the Princess Potentilla, and, as it had by that time been repeated many times, and had been added to here and there, she was represented as such a monster of ugliness that he was really quite curious to see her, and resolved to avail himself of the magic power of his ring to accomplish his design.
 So he made himself invisible, and passed the guard without their so much as suspecting that anyone was near.
 Climbing the wall was rather a difficulty, but when he at length found himself inside it he was charmed with the peaceful beauty of the little domain it enclosed, and still more delighted when he perceived a slender, lovely maiden wandering among the flowers.
@@ -38,19 +39,19 @@ Down he came straightway and alighted at her feet, and one look at her charming 
 The Princess sprang to her feet with a cry of terror at this sudden apparition, for really the Enchanter was no beauty.
 To begin with, he was very big and clumsy, then he had but one eye, and his teeth were long, and he stammered badly; nevertheless, he had an excellent opinion of himself, and mistook the Princess's cry of terror for an exclamation of delighted surprise.
 After pausing a moment to give her time to admire him, the Enchanter made her the most complimentary speech he could invent, which, however, did not please her at all, though he was extremely delighted with it himself.
-Poor Potentilla only shuddered and cried:'Oh!
-where is my Narcissus?
-'To which he replied with a self-satisfied chuckle: 'You want a narcissus, madam?
-Well, they are not rare; you shall have as many as you like.
-'Whereupon he waved his wand, and the Princess found herself surrounded and half buried in the fragrant flowers.
+Poor Potentilla only shuddered and cried: 'Oh!
+where is my Narcissus?'
+To which he replied with a self-satisfied chuckle: 'You want a narcissus, madam?
+Well, they are not rare; you shall have as many as you like.'
+Whereupon he waved his wand, and the Princess found herself surrounded and half buried in the fragrant flowers.
 She would certainly have betrayed that this was not the kind of narcissus she wanted, but for the Fairy Melinette, who had been anxiously watching the interview, and now thought it quite time to interfere.
-Assuming the Prince's voice, she whispered in Potentilla's ear:'We are menaced by a great danger, but my only fear is for you, my Princess.
-Therefore I beg you to hide what you really feel, and we will hope that some way out of the difficulty may present itself.
-'The Princess was much agitated by this speech, and feared lest the Enchanter should have overheard it; but he had been loudly calling her attention to the flowers, and chuckling over his own smartness in getting them for her; and it was rather a blow to him when she said very coldly that they were not the sort she preferred, and she would be glad if he would send them all away.
+Assuming the Prince's voice, she whispered in Potentilla's ear: 'We are menaced by a great danger, but my only fear is for you, my Princess.
+Therefore I beg you to hide what you really feel, and we will hope that some way out of the difficulty may present itself.'
+The Princess was much agitated by this speech, and feared lest the Enchanter should have overheard it; but he had been loudly calling her attention to the flowers, and chuckling over his own smartness in getting them for her; and it was rather a blow to him when she said very coldly that they were not the sort she preferred, and she would be glad if he would send them all away.
 This he did, but afterwards wished to kiss the Princess's hand as a reward for having been so obliging; but the Fairy Melinette was not going to allow anything of that kind.
-She appeared suddenly, in all her splendour, and cried:'Stay, Grumedan; this Princess is under my protection, and the smallest impertinence will cost you a thousand years of captivity.
-If you can win Potentilla's heart by the ordinary methods I cannot oppose you, but I warn you that I will not put up with any of your usual tricks.
-'This declaration was not at all to the Enchanter's taste; but he knew that there was no help for it, and that he would have to behave well, and pay the Princess all the delicate attentions he could think of; though they were not at all the sort of thing he was used to.
+She appeared suddenly, in all her splendour, and cried: 'Stay, Grumedan; this Princess is under my protection, and the smallest impertinence will cost you a thousand years of captivity.
+If you can win Potentilla's heart by the ordinary methods I cannot oppose you, but I warn you that I will not put up with any of your usual tricks.'
+This declaration was not at all to the Enchanter's taste; but he knew that there was no help for it, and that he would have to behave well, and pay the Princess all the delicate attentions he could think of; though they were not at all the sort of thing he was used to.
 However, he decided that to win such a beauty it was quite worth while; and Melinette, feeling that she could now leave the Princess in safety, hurried off to tell Prince Narcissus what was going forward.
 Of course, at the very mention of the Enchanter as a rival he was furious, and I don't know what foolish things he would not have done if Melinette had not been there to calm him down.
 She represented to him what a powerful enchanter Grumedan was, and how, if he were provoked, he might avenge himself upon the Princess, since he was the most unjust and churlish of all the enchanters, and had often before had to be punished by the Fairy Queen for some of his ill-deeds.
@@ -60,33 +61,35 @@ Then began a struggle between Grumedan and the Prince, the latter under the name
 Prince Narcissus first made friends with all the birds in Potentilla's little domain, and taught them to sing her name and her praises, with all their sweetest trills and most touching melodies, and all day long to tell her how dearly he loved her.
 Grumedan, thereupon, declared that there was nothing new about that, since the birds had sung since the world began, and all lovers had imagined that they sang for them alone.
 Therefore he said he would himself write an opera that should be absolutely a novelty and something worth hearing.
-When the time came for the performance (which lasted five weary hours) the Princess found to her dismay that the 'opera' consisted of this more than indifferent verse, chanted with all their might by ten thousand frogs:'Admirable Potentilla, Do you think it kind or wise In this sudden way to kill a Poor Enchanter with your eyes?
-'Really, if Narcissus had not been there to whisper in her ear and divert her attention, I don't know what would have become of poor Potentilla, for though the first repetition of this absurdity amused her faintly, she nearly died of weariness before the time was over.
+When the time came for the performance (which lasted five weary hours) the Princess found to her dismay that the 'opera' consisted of this more than indifferent verse, chanted with all their might by ten thousand frogs: 'Admirable Potentilla, Do you think it kind or wise In this sudden way to kill a Poor Enchanter with your eyes?'
+Really, if Narcissus had not been there to whisper in her ear and divert her attention, I don't know what would have become of poor Potentilla, for though the first repetition of this absurdity amused her faintly, she nearly died of weariness before the time was over.
 Luckily Grumedan did not perceive this, as he was too much occupied in whipping up the frogs, many of whom perished miserably from fatigue, since he did not allow them to rest for a moment.
-The Prince's next idea for Potentilla's amusement was to cause a fleet of boats exactly like those of Cleopatra, of which you have doubtless read in history, to come up the little river, and upon the most gorgeously decorated of these reclined the great Queen herself, who, as soon as she reached the place where Potentilla sat in rapt attention, stepped majestically on shore and presented the Princess with that celebrated pearl of which you have heard so much, saying:'You are more beautiful than I ever was.
-Let my example warn you to make a better use of your beauty!
-'And then the little fleet sailed on, until it was lost to view in the windings of the river.
-Grumedan was also looking on at the spectacle, and said very contemptuously:'I cannot say I think these marionettes amusing.
+The Prince's next idea for Potentilla's amusement was to cause a fleet of boats exactly like those of Cleopatra, of which you have doubtless read in history, to come up the little river, and upon the most gorgeously decorated of these reclined the great Queen herself, who, as soon as she reached the place where Potentilla sat in rapt attention, stepped majestically on shore and presented the Princess with that celebrated pearl of which you have heard so much, saying: 'You are more beautiful than I ever was.
+Let my example warn you to make a better use of your beauty!'
+And then the little fleet sailed on, until it was lost to view in the windings of the river.
+Grumedan was also looking on at the spectacle, and said very contemptuously: 'I cannot say I think these marionettes amusing.
 What a to-do to make over a single pearl!
-But if you like pearls, madam, why, I will soon gratify you.
-'So saying, he drew a whistle from his pocket, and no sooner had he blown it than the Princess saw the water of the river bubble and grow muddy, and in another instant up came hundreds of thousands of great oysters, who climbed slowly and laboriously towards her and laid at her feet all the pearls they contained.
+But if you like pearls, madam, why, I will soon gratify you.'
+So saying, he drew a whistle from his pocket, and no sooner had he blown it than the Princess saw the water of the river bubble and grow muddy, and in another instant up came hundreds of thousands of great oysters, who climbed slowly and laboriously towards her and laid at her feet all the pearls they contained.
 'Those are what I call pearls,' cried Grumedan in high glee.
 And truly there were enough of them to pave every path in Potentilla's garden and leave some to spare!
 The next day Prince Narcissus had prepared for the Princess's pleasure a charming arbour of leafy branches, with couches of moss and grassy floor and garlands everywhere, with her name written in different coloured blossoms.
-Here he caused a dainty little banquet to be set forth, while hidden musicians played softly, and the silvery fountains plashed down into their marble basins, and when presently the music stopped a single nightingale broke the stillness with his delicious chant.'Ah!'
-cried the Princess, recognizing the voice of one of her favourites, 'Philomel, my sweet one, who taught you that new song?
-'And he answered: 'Love, my Princess.
-'Meanwhile the Enchanter was very ill-pleased with the entertainment, which he declared was dulness itself.
+Here he caused a dainty little banquet to be set forth, while hidden musicians played softly, and the silvery fountains plashed down into their marble basins, and when presently the music stopped a single nightingale broke the stillness with his delicious chant.
+'Ah!'
+cried the Princess, recognizing the voice of one of her favourites, 'Philomel, my sweet one, who taught you that new song?'
+And he answered: 'Love, my Princess.'
+Meanwhile the Enchanter was very ill-pleased with the entertainment, which he declared was dulness itself.
 'You don't seem to have any idea in these parts beyond little squeaking birds!'
 said he.
-'And fancy giving a banquet without so much as an ounce of plate!
-'So the next day, when the Princess went out into her garden, there stood a summer-house built of solid gold, decorated within and without with her initials and the Enchanter's combined.
+'And fancy giving a banquet without so much as an ounce of plate!'
+So the next day, when the Princess went out into her garden, there stood a summer-house built of solid gold, decorated within and without with her initials and the Enchanter's combined.
 And in it was spread an enormous repast, while the table so glittered with golden cups and plates, flagons and dishes, candlesticks and a hundred other things beside, that it was hardly possible to look steadily at it.
 The Enchanter ate like six ogres, but the Princess could not touch a morsel.
-Presently Grumedan remarked with a grin:'I have provided neither musicians nor singers; but as you seem fond of music I will sing to you myself.
-'Whereupon he began, with a voice like a screech-owl's, to chant the words of his 'opera,' only this time happily not at such a length, and without the frog accompaniment.
+Presently Grumedan remarked with a grin: 'I have provided neither musicians nor singers; but as you seem fond of music I will sing to you myself.'
+Whereupon he began, with a voice like a screech-owl's, to chant the words of his 'opera,' only this time happily not at such a length, and without the frog accompaniment.
 After this the Prince again asked the aid of his friends the birds, and when they had assembled from all the country round he tied about the neck of each one a tiny lamp of some brilliant colour, and when darkness fell he made them go through a hundred pretty tricks before the delighted Potentilla, who clapped her little hands with delight when she saw her own name traced in points of light against the dark trees, or when the whole flock of sparks grouped themselves into bouquets of different colours, like living flowers.
-Grumedan leaning back in his arm-chair, with one knee crossed over the other and his nose in the air, looked on disdainfully.'Oh!
+Grumedan leaning back in his arm-chair, with one knee crossed over the other and his nose in the air, looked on disdainfully.
+'Oh!
 if you like fireworks, Princess,' said he; and the next night all the will-o'-the-wisps in the country came and danced on the plain, which could be seen from the Princess's windows, and as she was looking out, and rather enjoying the sight, up sprang a frightful volcano, pouring out smoke and flames which terrified her greatly, to the intense amusement of the Enchanter, who laughed like a pack of wolves quarrelling.
 After this, as many of the will-o'-the-wisps as could get in crowded into Potentilla's garden, and by their light the tall yew-trees danced minuets until the Princess was weary and begged to be excused from looking at anything more that night.
 But, in spite of Potentilla's efforts to behave politely to the tiresome old Enchanter, whom she detested, he could not help seeing that he failed to please her, and then he began to suspect very strongly that she must love someone else, and that somebody besides Melinette was responsible for all the festivities he had witnessed.
@@ -97,46 +100,52 @@ The poor Prince had been getting quite thin with anxiety and annoyance, and was 
 They greeted one another rapturously, and were just sitting down to talk over everything cosily, and enjoy the Enchanter's discomfiture together, when out he burst in a fury from behind a bush.
 With his huge club he aimed a terrific blow at Narcissus, which must certainly have killed him but for the adroitness of the Fairy Melinette, who arrived upon the scene just in time to snatch him up and carry him off at lightning speed to her castle in the air.
 Poor Potentilla, however, had not the comfort of knowing this, for at the sight of the Enchanter threatening her beloved Prince she had given one shriek and fallen back insensible.
-When she recovered her senses she was more than ever convinced that he was dead, since even Melinette was no longer near her, and no one was left to defend her from the odious old Enchanter.To make matters worse, he seemed to be in a very bad temper, and came blustering and raging at the poor Princess.
+When she recovered her senses she was more than ever convinced that he was dead, since even Melinette was no longer near her, and no one was left to defend her from the odious old Enchanter.
+To make matters worse, he seemed to be in a very bad temper, and came blustering and raging at the poor Princess.
 'I tell you what it is, madam,' said he: 'whether you love this whipper-snapper Prince or not doesn't matter in the least.
 You are going to marry me, so you may as well make up your mind to it; and I am going away this very minute to make all the arrangements.
 But in case you should get into mischief in my absence, I think I had better put you to sleep.
-'  So saying, he waved his wand over her, and in spite of her utmost efforts to keep awake she sank into a profound and dreamless slumber.As he wished to make what he considered a suitable entry into the King's palace, he stepped outside the Princess's little domain, and mounted upon an immense chariot with great solid wheels, and shafts like the trunk of an oak-tree, but all of solid gold.
+'  So saying, he waved his wand over her, and in spite of her utmost efforts to keep awake she sank into a profound and dreamless slumber.
+As he wished to make what he considered a suitable entry into the King's palace, he stepped outside the Princess's little domain, and mounted upon an immense chariot with great solid wheels, and shafts like the trunk of an oak-tree, but all of solid gold.
 This was drawn with great difficulty by forty-eight strong oxen; and the Enchanter reclined at his ease, leaning upon his huge club, and holding carelessly upon his knee a tawny African lion, as if it had been a little lapdog.
-It was about seven o'clock in the morning when this extraordinary chariot reached the palace gates; the King was already astir, and about to set off on a hunting expedition; as for the Queen, she had only just gone off into her first sleep, and it would have been a bold person indeed who ventured to wake her.The King was greatly annoyed at having to stay and see a visitor at such a time, and pulled off his hunting boots again with many grimaces.
-Meantime the Enchanter was stumping about in the hall, crying:'Where is this King?
-Let him be told that I must see him and his wife also.
-'The King, who was listening at the top of the staircase, thought this was not very polite; however, he took counsel with his favourite huntsman, and, following his advice, presently went down to see what was wanted of him.
-He was struck with astonishment at the sight of the chariot, and was gazing at it, when the Enchanter strode up to him, exclaiming:'Shake hands, Cloverleaf, old fellow!
-Don't you know me?
-''No, I can't say I do,' replied the King, somewhat embarrassed.
+It was about seven o'clock in the morning when this extraordinary chariot reached the palace gates; the King was already astir, and about to set off on a hunting expedition; as for the Queen, she had only just gone off into her first sleep, and it would have been a bold person indeed who ventured to wake her.
+The King was greatly annoyed at having to stay and see a visitor at such a time, and pulled off his hunting boots again with many grimaces.
+Meantime the Enchanter was stumping about in the hall, crying: 'Where is this King?
+Let him be told that I must see him and his wife also.'
+The King, who was listening at the top of the staircase, thought this was not very polite; however, he took counsel with his favourite huntsman, and, following his advice, presently went down to see what was wanted of him.
+He was struck with astonishment at the sight of the chariot, and was gazing at it, when the Enchanter strode up to him, exclaiming: 'Shake hands, Cloverleaf, old fellow!
+Don't you know me?'
+'No, I can't say I do,' replied the King, somewhat embarrassed.
 'Why, I am Grumedan, the Enchanter,' said he, 'and I am come to make your fortune.
-Let us come in and talk things over a bit.
-'Thereupon he ordered the oxen to go about their business, and they bounded off like stags, and were out of sight in a moment.
+Let us come in and talk things over a bit.'
+Thereupon he ordered the oxen to go about their business, and they bounded off like stags, and were out of sight in a moment.
 Then, with one blow of his club, he changed the massive chariot into a perfect mountain of gold pieces.
-'Those are for your lackeys,' said he to the King, 'that they may drink my health.
-'Naturally a great scramble ensued, and at last the laughter and shouting awoke the Queen, who rang for her maids to ask the reason of such an unwonted hurry-burly.
+'Those are for your lackeys,' said he to the King, 'that they may drink my health.'
+Naturally a great scramble ensued, and at last the laughter and shouting awoke the Queen, who rang for her maids to ask the reason of such an unwonted hurry-burly.
 When they said that a visitor was asking for her, and then proceeded each one to tell breathlessly a different tale of wonder, in which she could only distinguish the words, 'oxen,' 'gold,' 'club,' 'giant,' 'lion,' she thought they were all out of their minds.
 Meanwhile the King was asking the Enchanter to what he was indebted for the honour of this visit, and on his replying that he would not say until the Queen was also present, messenger after messenger was dispatched to her to beg her immediate attendance.
-But Frivola was in a very bad humour at having been so unceremoniously awakened, and declared that she had a pain in her little finger, and that nothing should induce her to come.When the Enchanter heard this he insisted that she must come.
-'Take my club to her Majesty,' said he, 'and tell her that if she smells the end of it she will find it wonderfully reviving.
-'So four of the King's strongest men-at-arms staggered off with it; and after some persuasion the Queen consented to try this novel remedy.
+But Frivola was in a very bad humour at having been so unceremoniously awakened, and declared that she had a pain in her little finger, and that nothing should induce her to come.
+When the Enchanter heard this he insisted that she must come.
+'Take my club to her Majesty,' said he, 'and tell her that if she smells the end of it she will find it wonderfully reviving.'
+So four of the King's strongest men-at-arms staggered off with it; and after some persuasion the Queen consented to try this novel remedy.
 She had hardly smelt it for an instant when she declared herself to be perfectly restored; but whether that was due to the scent of the wood or to the fact that as soon as she touched it out fell a perfect shower of magnificent jewels, I leave you to decide.
 At any rate, she was now all eagerness to see the mysterious stranger, and hastily throwing on her royal mantle, popped her second-best diamond crown over her night-cap, put a liberal dab of rouge upon each cheek, and holding up her largest fan before her nose—for she was not used to appearing in broad daylight—she went mincing into the great hall.
-The Enchanter waited until the King and Queen had seated themselves upon their throne, and then, taking his place between them, he began solemnly:'My name is Grumedan.
+The Enchanter waited until the King and Queen had seated themselves upon their throne, and then, taking his place between them, he began solemnly: 'My name is Grumedan.
 I am an extremely well-connected Enchanter; my power is immense.
 In spite of all this, the charms of your daughter Potentilla have so fascinated me that I cannot live without her.
 She fancies that she loves a certain contemptible puppy called Narcissus; but I have made very short work with him.
-I really do not care whether you consent to my marriage with your daughter or not, but I am bound to ask your consent, on account of a certain meddling Fairy called Melinette, with whom I have reason for wishing to keep on good terms.
-'The King and Queen were somewhat embarrassed to know what answer to make to this terrible suitor, but at last they asked for time to talk over the matter: since, they said, their subjects might think that the heir to the throne should not be married with as little consideration as a dairymaid.'Oh!
+I really do not care whether you consent to my marriage with your daughter or not, but I am bound to ask your consent, on account of a certain meddling Fairy called Melinette, with whom I have reason for wishing to keep on good terms.'
+The King and Queen were somewhat embarrassed to know what answer to make to this terrible suitor, but at last they asked for time to talk over the matter: since, they said, their subjects might think that the heir to the throne should not be married with as little consideration as a dairymaid.
+'Oh!
 take a day or two if you like,' said the Enchanter; 'but in the meantime, I am going to send for your daughter.
-Perhaps you will be able to induce her to be reasonable.
-'So saying, he drew out his favourite whistle, and blew one ear-piercing note—whereupon the great lion, who had been dozing in the sunny courtyard, come bounding in on his soft, heavy feet.
+Perhaps you will be able to induce her to be reasonable.'
+So saying, he drew out his favourite whistle, and blew one ear-piercing note—whereupon the great lion, who had been dozing in the sunny courtyard, come bounding in on his soft, heavy feet.
 'Orion,' said the Enchanter, 'go and fetch me the Princess, and bring her here at once.
-Be gentle now!
-'At these words Orion went off at a great pace, and was soon at the other end of the King's gardens.
+Be gentle now!'
+At these words Orion went off at a great pace, and was soon at the other end of the King's gardens.
 Scattering the guards right and left, he cleared the wall at a bound, and seizing the sleeping Princess, he threw her on to his back, where he kept her by holding her robe in his teeth.
-Then he trotted gently back, and in less than five minutes stood in the great hall before the astonished King and Queen.The Enchanter held his club close to the Princess's charming little nose, whereupon she woke up and shrieked with terror at finding herself in a strange place with the detested Grumedan.
+Then he trotted gently back, and in less than five minutes stood in the great hall before the astonished King and Queen.
+The Enchanter held his club close to the Princess's charming little nose, whereupon she woke up and shrieked with terror at finding herself in a strange place with the detested Grumedan.
 Frivola, who had stood by, stiff with displeasure at the sight of the lovely Princess, now stepped forward, and with much pretended concern proposed to carry off Potentilla to her own apartments that she might enjoy the quiet she seemed to need.
 Really her one idea was to let the Princess be seen by as few people as possible; so, throwing a veil over her head, she led her away and locked her up securely.
 All this time Prince Narcissus, gloomy and despairing, was kept a prisoner by Melinette in her castle in the air, and in spite of all the splendour by which he was surrounded, and all the pleasures which he might have enjoyed, his one thought was to get back to Potentilla.
@@ -144,16 +153,20 @@ The Fairy, however, left him there, promising to do her very best for him, and c
 One day, as he paced sadly to and fro, he thought he heard a voice he knew calling to him, and sure enough there was the faithful Philomel, Potentilla's favourite, who told him all that had passed, and how the sleeping Princess had been carried off by the Lion to the great grief of all her four-footed and feathered subjects, and how, not knowing what to do, he had wandered about until he heard the swallows telling one another of the Prince who was in their airy castle and had come to see if it could be Narcissus.
 The Prince was more distracted than ever, and tried vainly to escape from the castle, by leaping from the roof into the clouds; but every time they caught him, and rolling softly up, brought him back to the place from which he started, so at last he gave up the attempt and waited with desperate patience for the return of Melinette.
 Meanwhile matters were advancing rapidly in the court of King Cloverleaf, for the Queen quite made up her mind that such a beauty as Potentilla must be got out of the way as quickly as possible.
-So she sent for the Enchanter secretly, and after making him promise that he would never turn herself and King Cloverleaf out of their kingdom, and that he would take Potentilla far away, so that never again might she set eyes upon her, she arranged the wedding for the next day but one.You may imagine how Potentilla lamented her sad fate, and entreated to be spared.
-All the comfort she could get out of Frivola was, that if she preferred a cup of poison to a rich husband she would certainly provide her with one.When, then, the fatal day came the unhappy Potentilla was led into the great hall between the King and Queen, the latter wild with envy at the murmurs of admiration which rose on all sides at the loveliness of the Princess.
+So she sent for the Enchanter secretly, and after making him promise that he would never turn herself and King Cloverleaf out of their kingdom, and that he would take Potentilla far away, so that never again might she set eyes upon her, she arranged the wedding for the next day but one.
+You may imagine how Potentilla lamented her sad fate, and entreated to be spared.
+All the comfort she could get out of Frivola was, that if she preferred a cup of poison to a rich husband she would certainly provide her with one.
+When, then, the fatal day came the unhappy Potentilla was led into the great hall between the King and Queen, the latter wild with envy at the murmurs of admiration which rose on all sides at the loveliness of the Princess.
 An instant later in came Grumedan by the opposite door.
 His hair stood on end, and he wore a huge bag-purse and a cravat tied in a bow, his mantle was made of a shower of silver coins with a lining of rose colour, and his delight in his own appearance knew no bounds.
 That any Princess could prefer a cup of poison to himself never for an instant occurred to him.
-Nevertheless, that was what did happen, for when Queen Frivola in jest held out the fatal cup to the Princess, she took it eagerly, crying:'Ah!
+Nevertheless, that was what did happen, for when Queen Frivola in jest held out the fatal cup to the Princess, she took it eagerly, crying: 'Ah!
 beloved Narcissus, I come to thee!'
-and was just raising it to her lips when the window of the great hall burst open, and the Fairy Melinette floated in upon a glowing sunset cloud, followed by the Prince himself:All the court looked on in dazzled surprise, while Potentilla, catching sight of her lover, dropped the cup and ran joyfully to meet him.The Enchanter's first thought was to defend himself when he saw Melinette appear, but she slipped round his blind side, and catching him by the eyelashes dragged him off to the ceiling of the hall, where she held him kicking for a while just to give him a lesson, and then touching him with her wand she imprisoned him for a thousand years in a crystal ball which hung from the roof.
+and was just raising it to her lips when the window of the great hall burst open, and the Fairy Melinette floated in upon a glowing sunset cloud, followed by the Prince himself: All the court looked on in dazzled surprise, while Potentilla, catching sight of her lover, dropped the cup and ran joyfully to meet him.
+The Enchanter's first thought was to defend himself when he saw Melinette appear, but she slipped round his blind side, and catching him by the eyelashes dragged him off to the ceiling of the hall, where she held him kicking for a while just to give him a lesson, and then touching him with her wand she imprisoned him for a thousand years in a crystal ball which hung from the roof.
 'Let this teach you to mind what I tell you another time,' she remarked severely.
 Then turning to the King and Queen, she begged them to proceed with the wedding, since she had provided a much more suitable bridegroom.
 She also deprived them of their kingdom, for they had really shown themselves unfit to manage it, and bestowed it upon the Prince and Princess, who, though they were unwilling to take it, had no choice but to obey the Fairy.
-However, they took care that the King and Queen were always supplied with everything they could wish for.Prince Narcissus and Princess Potentilla lived long and happily, beloved by all their subjects.
+However, they took care that the King and Queen were always supplied with everything they could wish for.
+Prince Narcissus and Princess Potentilla lived long and happily, beloved by all their subjects.
 As for the Enchanter, I don't believe he has been let out yet.
