@@ -24,6 +24,7 @@ import re
 import tarfile
 import nltk
 from six.moves import urllib
+import pdb
 
 from tensorflow.python.platform import gfile
 import tensorflow as tf

@@ -37,6 +37,7 @@ import random
 import sys
 import time
 import logging
+import pdb 
 
 import numpy as np
 from six.moves import xrange  # pylint: disable=redefined-builtin
@@ -172,7 +173,10 @@ def train():
       from_train, to_train, from_dev, to_dev, _, _ = data_utils.prepare_wmt_data(
           FLAGS.data_dir, FLAGS.from_vocab_size, FLAGS.to_vocab_size)
 
-  with tf.Session() as sess:
+  # This is so that other people can still use the GPUs while this program is sitting around.
+  config = tf.ConfigProto()
+  config.gpu_options.allow_growth=True
+  with tf.Session(config=config) as sess:
     # Create model.
     print("Creating %d layers of %d units." % (FLAGS.num_layers, FLAGS.size))
     model = create_model(sess, False)
@@ -180,6 +184,8 @@ def train():
     # Read data into buckets and compute their sizes.
     print ("Reading development and training data (limit: %d)."
            % FLAGS.max_train_data_size)
+   
+    pdb.set_trace() 
     dev_set = read_data(from_dev, to_dev)
     train_set = read_data(from_train, to_train, FLAGS.max_train_data_size)
     train_bucket_sizes = [len(train_set[b]) for b in xrange(len(_buckets))]
