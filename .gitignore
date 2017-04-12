@@ -1,3 +1,6 @@
+# ignore database objects
+*.db
+
 #ignore config objects
 homeworks/alexa_chatbot/*.json
 
