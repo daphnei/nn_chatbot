@@ -20,7 +20,7 @@ def create_trie():
 
 	# A harded-coded list of exceptions. (names that are more often see as common noun
 	# at the front of sentences.)
-	exceptions = ["grant", "van", "son", "young", "royal", "long", "june", "august", "joy", "young", "aura", "ray", "ok", "harmony", "ha", "sun", "in", "many", "see", "so", "my", "may", "an", "les", "will", "love", "man"]
+	exceptions = ["winter", "grant", "van", "son", "young", "royal", "long", "june", "august", "joy", "young", "aura", "ray", "ok", "harmony", "ha", "sun", "in", "many", "see", "so", "my", "may", "an", "les", "will", "love", "man"]
 
 	names = []
 	for tsv_url in tsvs:
