@@ -25,6 +25,6 @@ model_params:
       num_layers: 2
   optimizer.name: Adam
   optimizer.learning_rate: 0.0001
-  source.max_seq_len: 100
-  source.reverse: false
-  target.max_seq_len: 100
+  source.max_seq_len: 80
+  source.reverse: true
+  target.max_seq_len: 80
