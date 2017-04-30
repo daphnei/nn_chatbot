@@ -1,7 +1,7 @@
 #!/bin/sh
 
 DATA_PATH="/data"
-MODEL_PATH="/data/models/books_v1"
+MODEL_PATH="/data/models/books_tiny_v1"
 PREDICTIONS_PATH="$MODEL_PATH/predictions"
 
 SEQ2SEQ_PATH="../.."
@@ -12,8 +12,8 @@ export PYTHONPATH=$SEQ2SEQ_PATH
 VOCAB_SOURCE=${DATA_PATH}/vocab.tok.txt
 VOCAB_TARGET=${DATA_PATH}/vocab.tok.txt
 
-TRAIN_SOURCES=${DATA_PATH}/input.txt
-TRAIN_TARGETS=${DATA_PATH}/output.txt
+TRAIN_SOURCES=${DATA_PATH}/input_tiny.txt
+TRAIN_TARGETS=${DATA_PATH}/output_tiny.txt
 
 TRAIN_STEPS=1000000
 

@@ -28,3 +28,11 @@ model_params:
   source.max_seq_len: 80
   source.reverse: true
   target.max_seq_len: 80
+#hooks:
+#  - class: TrainSampleHook
+#    params:
+#      every_n_steps: 1000
+# - class: PrintModelAnalysisHook
+#  - class: MetadataCaptureHook
+
+
