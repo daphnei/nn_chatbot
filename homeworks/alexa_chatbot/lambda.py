@@ -6,6 +6,12 @@ Happy Hacking!
 
 from ask import alexa
 import alexa_client
+CONV_START = "0"
+CONV_CONT = "1"
+CONV_ACCEPT = "2"
+CONV_REJECT = "3"
+CONV_END = "4"
+
 
 def lambda_handler(request_obj, context=None):
     '''
@@ -30,7 +36,19 @@ def lambda_handler(request_obj, context=None):
 @alexa.default_handler()
 def default_handler(request):
     user_utterance = request.get_slot_map()["Text"]
-    alexa_reply = alexa_client.talk_to_server(user_utterance)
+
+    if user_utterance.lower() == "yes":
+        alexa_client.talk_to_server(CONV_ACCEPT)
+        alexa_reply = "Great! What's the next sentence?"
+    elif user_utterance.lower() == "no":
+        alexa_client.talk_to_server(CONV_REJECT)
+        alexa_reply = "bummer! Let's try again."
+    elif user_utterance.lower() == "end":
+        alexa_reply = alexa_client.talk_to_server(CONV_END)
+        alexa_reply = "Here is the story: " + alexa_reply
+    else:
+        alexa_reply = "The next line will be, " + alexa_client.talk_to_server(CONV_START + user_utterance) + " Is that good?"
+
             
     """ The default handler gets invoked if no handler is set for a request """
     return alexa.create_response(message=alexa_reply)
@@ -38,7 +56,7 @@ def default_handler(request):
 
 @alexa.request_handler("LaunchRequest")
 def launch_request_handler(request):
-    return alexa.create_response(message="Hey there, what's going on?")
+    return alexa.create_response(message="Hey there, give me a sentence.")
 
 
 @alexa.request_handler("SessionEndedRequest")
