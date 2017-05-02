@@ -89,7 +89,9 @@ if __name__ == "__main__":
 
 					for t in storyTurns:
 						if t.accepted:
-							chatbot_response += (" " + t.query + " " + t.response);
+							chatbot_response += (" " + t.query + " " + t.response)
+
+					storyTurns = []
 
 
 				if queryCommand == CONV_ACCEPT or queryCommand == CONV_REJECT:

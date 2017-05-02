@@ -47,7 +47,7 @@ def default_handler(request):
         alexa_reply = alexa_client.talk_to_server(CONV_END)
         alexa_reply = "Here is the story: " + alexa_reply
     else:
-        alexa_reply = "You said," + alexa_client.talk_to_server(CONV_START + user_utterance) + " Is that good?"
+        alexa_reply = "The next line will be, " + alexa_client.talk_to_server(CONV_START + user_utterance) + " Is that good?"
 
             
     """ The default handler gets invoked if no handler is set for a request """
