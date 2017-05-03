@@ -2,6 +2,7 @@ import socket
 import json
 
 
+
 def talk_to_server(user_utterance):
 	reply = ""
 

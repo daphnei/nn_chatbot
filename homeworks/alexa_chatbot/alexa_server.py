@@ -2,12 +2,33 @@ import socket
 import json
 import tensorflow as tf
 import sys
+from infer_on_one import SingleInference
 
-sys.path.append('../seq2seq_twitter/')
-import translate
+CONV_START = "0"
+CONV_CONT = "1"
+CONV_ACCEPT = "2"
+CONV_REJECT = "3"
+CONV_END = "4"
+
+sys.path.append('../seq2seq/')
+
+storyTurns = []
+
+class Turn(object):
+	def __init__(self, query, response, accepted):
+		self.query = query
+		self.response = response
+		self.accepted = accepted
+
 
 if __name__ == "__main__":
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+	MODEL_DIR = "/chatdata/models/books_100k"
+	VOCAB_PATH = "/chatdata/vocab.tok.txt"
+
+	# current prediction time ~20ms
+	sl = SingleInference(MODEL_DIR, VOCAB_PATH)
 
 	with open('config.json') as config_file:
 		data = json.load(config_file)
@@ -22,39 +43,67 @@ if __name__ == "__main__":
 	sock.listen(1)
 
 	amount_expected = 150
+	#
+	# FLAGS = tf.app.flags.FLAGS
+	# FLAGS.data_dir = data["tf_data_dir"]
+	# FLAGS.train_dir = data["tf_checkpoints"]
 
-	FLAGS = tf.app.flags.FLAGS
-	FLAGS.data_dir = data["tf_data_dir"]
-	FLAGS.train_dir = data["tf_checkpoints"]
-
- 	with tf.Session() as sess:
+ 	# with tf.Session() as sess:
  		# Create model and load parameters.
-		(model, in_vocab, out_vocab) = translate.init_decode(sess)
-		
-		while True:
-			user_utterance = ""
-			print('waiting for a connection')
-			connection, client_address = sock.accept()
-			print('connection from', client_address)
 
-			try:
-				
-				while "\n" not in user_utterance:
-					print("in while")
-					data = connection.recv(16)
-					if len(data) <= 0:
-						print("something went wrong")
-						break
-					user_utterance += data
+	chatbot_response = sl.query_once("test")
+	print(chatbot_response) 
 
-				if user_utterance:
-					stripped_utterance = user_utterance.rstrip()
+	last_turn = Turn("", "", False)
 
-					print("User says: " + user_utterance + " ||| " + stripped_utterance)
+	while True:
+		user_utterance = ""
+		print('waiting for a connection')
+		connection, client_address = sock.accept()
+		print('connection from', client_address)
 
-					chatbot_response = str(translate.decode_sentence(sess, model, in_vocab, out_vocab, stripped_utterance))
-					print("Alexa says: " + chatbot_response)
-					connection.sendall(chatbot_response + '\n')
+		try:
+			while "\n" not in user_utterance:
+				print("in while")
+				data = connection.recv(16)
+				if len(data) <= 0:
+					print("something went wrong")
+					break
+				user_utterance += data
+			if user_utterance:
+				stripped_utterance = user_utterance.rstrip()
 
-			finally:
-				connection.close()
+				print("User says: " + user_utterance + " ||| " + stripped_utterance)
+
+				queryCommand = stripped_utterance[0]
+
+				chatbot_response = ""
+				if queryCommand == CONV_START:
+					last_turn.query = stripped_utterance[1:]
+					chatbot_response = sl.query_once(last_turn.query) 
+					last_turn.response = chatbot_response
+				if queryCommand == CONV_ACCEPT:
+					chatbot_response = "" + CONV_CONT
+					last_turn.accepted = True
+				if queryCommand == CONV_REJECT:
+					chatbot_response = "" + CONV_CONT
+					last_turn.accepted = False
+				if queryCommand == CONV_END:
+					chatbot_response = ""
+
+					for t in storyTurns:
+						if t.accepted:
+							chatbot_response += (" " + t.query + ". " + t.response + ".")
+
+					storyTurns = []
+
+
+				if queryCommand == CONV_ACCEPT or queryCommand == CONV_REJECT:
+					storyTurns.append(last_turn)
+
+
+				connection.sendall(chatbot_response + '\n')
+				print(chatbot_response)
+
+		finally:
+			connection.close()
