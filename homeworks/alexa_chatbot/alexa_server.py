@@ -105,7 +105,7 @@ if __name__ == "__main__":
 				if queryCommand == CONV_ACCEPT or queryCommand == CONV_REJECT:
 					if not last_turn.invalid:
 						storyTurns.append(last_turn)
-						last_turn.invalid = True
+						last_turn = Turn("", "", False)
 
 
 				connection.sendall(chatbot_response + '\n')
