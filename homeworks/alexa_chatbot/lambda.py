@@ -49,7 +49,7 @@ def default_handler(request):
         	alexa_reply = "Bummer! Let's try again."
         else:
             alexa_reply = "Ok, why don't you suggest a next sentence."
-    elif user_utterance.lower() == "end":
+    elif user_utterance.lower() == "end" or user_utterence.lower().contains("what is the story so far"):
         alexa_reply = alexa_client.talk_to_server(CONV_END)
         alexa_reply = "Here is the story: " + alexa_reply
     else:
@@ -66,7 +66,7 @@ def default_handler(request):
 
 @alexa.request_handler("LaunchRequest")
 def launch_request_handler(request):
-    return alexa.create_response(message="Hey there, give me a sentence.")
+    return alexa.create_response(message="Welcome to the story generator. What should the first sentence be?")
 
 
 @alexa.request_handler("SessionEndedRequest")
