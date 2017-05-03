@@ -64,7 +64,6 @@ if __name__ == "__main__":
 
 		try:
 			while "\n" not in user_utterance:
-				print("in while")
 				data = connection.recv(16)
 				if len(data) <= 0:
 					print("something went wrong")
@@ -73,7 +72,7 @@ if __name__ == "__main__":
 			if user_utterance:
 				stripped_utterance = user_utterance.rstrip()
 
-				print("User says: " + user_utterance + " ||| " + stripped_utterance)
+				print("User says: " + stripped_utterance)
 
 				queryCommand = stripped_utterance[0]
 
@@ -82,13 +81,13 @@ if __name__ == "__main__":
 					last_turn.query = stripped_utterance[1:]
 					chatbot_response = sl.query_once(last_turn.query) 
 					last_turn.response = chatbot_response
-				if queryCommand == CONV_ACCEPT:
+				elif queryCommand == CONV_ACCEPT:
 					chatbot_response = "" + CONV_CONT
 					last_turn.accepted = True
-				if queryCommand == CONV_REJECT:
+				elif queryCommand == CONV_REJECT:
 					chatbot_response = "" + CONV_CONT
 					last_turn.accepted = False
-				if queryCommand == CONV_END:
+				elif queryCommand == CONV_END:
 					chatbot_response = ""
 
 					for t in storyTurns:
@@ -96,6 +95,8 @@ if __name__ == "__main__":
 							chatbot_response += (" " + t.query + ". " + t.response + ".")
 
 					storyTurns = []
+				else:
+					print("Got an unknown command from the server: " + queryCommand)
 
 
 				if queryCommand == CONV_ACCEPT or queryCommand == CONV_REJECT:
@@ -103,7 +104,7 @@ if __name__ == "__main__":
 
 
 				connection.sendall(chatbot_response + '\n')
-				print(chatbot_response)
+				print("Alexa response with: " + chatbot_response)
 
 		finally:
 			connection.close()

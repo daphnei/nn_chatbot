@@ -3,7 +3,7 @@ In this file we specify default event handlers which are then populated into the
 Copyright Anjishnu Kumar 2015
 Happy Hacking!
 """
-
+import random
 from ask import alexa
 import alexa_client
 CONV_START = "0"
@@ -39,10 +39,16 @@ def default_handler(request):
 
     if user_utterance.lower() == "yes":
         alexa_client.talk_to_server(CONV_ACCEPT)
-        alexa_reply = "Great! What's the next sentence?"
+        if random.random():
+        	alexa_reply = "Great! What's the next sentence?"
+        else:
+            alexa_reply = "I'll add it to the story. What's next?"
     elif user_utterance.lower() == "no":
         alexa_client.talk_to_server(CONV_REJECT)
-        alexa_reply = "bummer! Let's try again."
+        if random.random():
+        	alexa_reply = "Bummer! Let's try again."
+        else:
+            alexa_reply = "todo"
     elif user_utterance.lower() == "end":
         alexa_reply = alexa_client.talk_to_server(CONV_END)
         alexa_reply = "Here is the story: " + alexa_reply
