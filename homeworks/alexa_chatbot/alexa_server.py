@@ -19,6 +19,7 @@ class Turn(object):
 		self.query = query
 		self.response = response
 		self.accepted = accepted
+		self.invalid = True
 
 
 if __name__ == "__main__":
@@ -81,6 +82,8 @@ if __name__ == "__main__":
 					last_turn.query = stripped_utterance[1:]
 					chatbot_response = sl.query_once(last_turn.query) 
 					last_turn.response = chatbot_response
+					last_turn.invalid = False
+
 				elif queryCommand == CONV_ACCEPT:
 					chatbot_response = "" + CONV_CONT
 					last_turn.accepted = True
@@ -100,7 +103,9 @@ if __name__ == "__main__":
 
 
 				if queryCommand == CONV_ACCEPT or queryCommand == CONV_REJECT:
-					storyTurns.append(last_turn)
+					if not last_turn.invalid:
+						storyTurns.append(last_turn)
+						last_turn.invalid = True
 
 
 				connection.sendall(chatbot_response + '\n')
