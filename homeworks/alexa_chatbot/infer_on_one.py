@@ -1,6 +1,10 @@
 from pydoc import locate
 import tensorflow as tf
 import numpy as np
+
+import sys
+sys.path.append("/home/ubuntu/nn_chatbot/seq2seq/")
+
 from seq2seq import tasks, models
 from seq2seq.training import utils as training_utils
 from seq2seq.tasks.inference_task import InferenceTask, unbatch_dict

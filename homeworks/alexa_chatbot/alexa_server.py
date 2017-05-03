@@ -1,6 +1,7 @@
 import socket
 import json
 import tensorflow as tf
+import nltk
 import sys
 from infer_on_one import SingleInference
 
@@ -11,7 +12,7 @@ CONV_REJECT = "3"
 CONV_END = "4"
 
 sys.path.append('../seq2seq/')
-
+sys.path.append("/home/ubuntu/nn_chatbot/seq2seq/")
 storyTurns = []
 
 class Turn(object):
@@ -25,8 +26,8 @@ class Turn(object):
 if __name__ == "__main__":
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-	MODEL_DIR = "/chatdata/models/books_100k"
-	VOCAB_PATH = "/chatdata/vocab.tok.txt"
+	MODEL_DIR = "/data/models/books_nopunc_v2"
+	VOCAB_PATH = "/data/vocab.tok.nopunc.txt"
 
 	# current prediction time ~20ms
 	sl = SingleInference(MODEL_DIR, VOCAB_PATH)
@@ -80,6 +81,7 @@ if __name__ == "__main__":
 				chatbot_response = ""
 				if queryCommand == CONV_START:
 					last_turn.query = stripped_utterance[1:]
+                    nn_input = last_turn.query.translate(None, '!@#$."\'?')
 					chatbot_response = sl.query_once(last_turn.query) 
 					last_turn.response = chatbot_response
 					last_turn.invalid = False

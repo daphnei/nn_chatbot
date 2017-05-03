@@ -48,12 +48,16 @@ def default_handler(request):
         if random.random():
         	alexa_reply = "Bummer! Let's try again."
         else:
-            alexa_reply = "todo"
+            alexa_reply = "Ok, why don't you suggest a next sentence."
     elif user_utterance.lower() == "end":
         alexa_reply = alexa_client.talk_to_server(CONV_END)
         alexa_reply = "Here is the story: " + alexa_reply
     else:
-        alexa_reply = "The next line will be, " + alexa_client.talk_to_server(CONV_START + user_utterance) + " Is that good?"
+        alexa_reply = "The next line will be, " + alexa_client.talk_to_server(CONV_START + user_utterance)
+         if random.random():
+             alexa_reply += " Is that good?"
+         else:
+             alexa_reply += " Do you want to add it to the story?"
 
             
     """ The default handler gets invoked if no handler is set for a request """
