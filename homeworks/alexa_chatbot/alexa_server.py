@@ -3,7 +3,7 @@ import json
 import tensorflow as tf
 import sys
 
-sys.path.append('../seq2seq/')
+sys.path.append('../seq2seq_twitter/')
 import translate
 
 if __name__ == "__main__":
@@ -50,10 +50,10 @@ if __name__ == "__main__":
 				if user_utterance:
 					stripped_utterance = user_utterance.rstrip()
 
-					print("User: " + user_utterance + " ||| " + stripped_utterance)
+					print("User says: " + user_utterance + " ||| " + stripped_utterance)
 
 					chatbot_response = str(translate.decode_sentence(sess, model, in_vocab, out_vocab, stripped_utterance))
-
+					print("Alexa says: " + chatbot_response)
 					connection.sendall(chatbot_response + '\n')
 
 			finally:
