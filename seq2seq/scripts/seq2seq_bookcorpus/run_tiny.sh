@@ -12,8 +12,8 @@ export PYTHONPATH=$SEQ2SEQ_PATH
 VOCAB_SOURCE=${DATA_PATH}/vocab.tok.txt
 VOCAB_TARGET=${DATA_PATH}/vocab.tok.txt
 
-TRAIN_SOURCES=${DATA_PATH}/dummy_output_verytiny.txt
-TRAIN_TARGETS=${DATA_PATH}/input_verytiny.txt
+TRAIN_SOURCES=${DATA_PATH}/input_verytiny.txt
+TRAIN_TARGETS=${DATA_PATH}/dummy_output_verytiny.txt
 
 TRAIN_STEPS=1000000
 
