@@ -1,7 +1,7 @@
 #!/bin/sh
 
-DATA_PATH="/data"
-MODEL_PATH="/data/models/books_v1"
+DATA_PATH="/chatdata"
+MODEL_PATH="/chatdata/models/books_100k"
 PREDICTIONS_PATH="$MODEL_PATH/predictions"
 
 SEQ2SEQ_PATH="../.."
@@ -53,7 +53,7 @@ if [ "$op" = "train" ]; then
     --train_steps $TRAIN_STEPS \
     --output_dir $MODEL_PATH \
     --gpu_allow_growth \
-    --gpu_memory_fraction 0.8 \
+    --gpu_memory_fraction 0.5 \
     --buckets 20,40
 
 elif [ "$op" = "test" ]; then
