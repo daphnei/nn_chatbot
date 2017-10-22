@@ -31,7 +31,7 @@ if [ "$op" = "train" ]; then
      # $SEQ2SEQ_PATH/example_configs/train_seq2seq.yml,
      # $SEQ2SEQ_PATH/example_configs/text_metrics_bpe.yml" \
   python "$SEQ2SEQ_PATH/bin/train.py"  \
-    --config_paths="$CONFIG_PATH/model.yaml" \
+    --config_paths="$CONFIG_PATH/model_v1.yaml" \
     --model_params "
         vocab_source: $VOCAB_SOURCE
         vocab_target: $VOCAB_TARGET" \
